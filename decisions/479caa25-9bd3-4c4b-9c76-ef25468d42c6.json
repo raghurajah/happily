@@ -1,0 +1,21 @@
+{
+  "kind": "decision",
+  "id": "479caa25-9bd3-4c4b-9c76-ef25468d42c6",
+  "question_id": "d5867ca3-b7f3-43f9-819d-4d98188f4722",
+  "choice": "Two core jobs: (1) keep asset values updated automatically near-real-time; (2) compare actual trajectory vs the retirement plan so the household knows how they are tracking",
+  "rationale": "User stated both jobs explicitly: manual updating is the pain, and actual-vs-plan comparison is the payoff",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d5867ca3-b7f3-43f9-819d-4d98188f4722"
+    },
+    {
+      "type": "supersedes",
+      "target": "49ecd41d-f765-4f90-8028-4f2394c9b341",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "created_at": "2026-06-11T13:24:07.752Z"
+}
