@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "50409d5c-e100-4bfc-aff8-2dcdabca390b",
+  "question": "What is the design language and device target?",
+  "options": [
+    "Data-centric immersive dark UI (near-black + deep maroon) responsive mobile web",
+    "Light minimal SaaS look",
+    "Native mobile app"
+  ],
+  "context": "Depends on the v1 surface decision. Tailwind 4 already in stack (01d42543).",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:46:05.999Z"
+}
