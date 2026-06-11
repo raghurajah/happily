@@ -1,0 +1,16 @@
+{
+  "kind": "decision",
+  "id": "3f1b6b21-be8e-40fc-b125-839bae8989cf",
+  "question_id": "68ee6993-e4b2-4b26-8dd6-8c6b6976753f",
+  "choice": "Fetch balances directly from the E*TRADE Accounts API (no third-party aggregator)",
+  "rationale": "All household accounts are at E*TRADE; user prefers direct brokerage API over giving an aggregator read access",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "68ee6993-e4b2-4b26-8dd6-8c6b6976753f"
+    }
+  ],
+  "created_at": "2026-06-11T13:35:24.216Z"
+}
