@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "5c68ced9-f9f3-4bb0-adf5-bf0524cc8156",
+  "question_id": "1cdbb86b-fd8c-49b7-8409-aaef9eb3da99",
+  "choice": "Withdrawal strategy is a per-Scenario input with three types in v1: (1) post-tax-first (default), (2) tax-deferred-first (Excel behavior), (3) blend schedule — a list of (year-or-age, post-tax %) control points defining a time-varying split of spending between buckets, stepped/interpolated between points. RMDs act as a floor on tax-deferred withdrawals under every strategy. Optimizing strategies (bracket-filling, Roth conversion) deferred past v1.",
+  "rationale": "User confirmed strategy-as-input and explicitly requested the dynamic time-keyed blend",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "1cdbb86b-fd8c-49b7-8409-aaef9eb3da99"
+    },
+    {
+      "type": "supersedes",
+      "target": "beeee9fe-6b61-4034-98f0-009765a58107",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:20:47.255Z"
+}
