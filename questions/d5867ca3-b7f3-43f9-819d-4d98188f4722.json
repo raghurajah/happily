@@ -1,0 +1,14 @@
+{
+  "kind": "question",
+  "id": "d5867ca3-b7f3-43f9-819d-4d98188f4722",
+  "question": "What are the core jobs of the app — why build an app instead of staying in Excel?",
+  "options": [
+    "Real-time asset updates + actual-vs-plan tracking",
+    "Just a prettier UI over the Excel model",
+    "Full financial planning suite"
+  ],
+  "context": "Depends on decision 2aa23484-71f3-40ec-9c64-2513139d809d (personal household app for Raghu and wife). User maintains an Excel retirement model today and struggles to keep asset values updated manually.",
+  "status": "answered",
+  "edges": [],
+  "created_at": "2026-06-11T13:23:57.525Z"
+}
