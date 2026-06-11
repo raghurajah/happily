@@ -1,0 +1,21 @@
+{
+  "kind": "decision",
+  "id": "8a2f4e15-3426-4636-b08d-cc5ea42b6265",
+  "question_id": "4cc7ce9a-ee5e-47a2-817c-c6d525e50eb7",
+  "choice": "All tracked accounts are at E*TRADE and API-visible. Two model buckets: 'tax-deferred' (rollover IRAs, the Excel's 401k column, taxed on withdrawal) and 'post-tax' (taxable brokerage). Each E*TRADE account maps to exactly one bucket.",
+  "rationale": "User confirmed 401k money is mostly rolled into rollover IRAs at E*TRADE, so the whole portfolio syncs via one API",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "4cc7ce9a-ee5e-47a2-817c-c6d525e50eb7"
+    },
+    {
+      "type": "supersedes",
+      "target": "9f2ba393-193a-4ff8-ad30-01cebf2d2190",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "created_at": "2026-06-11T13:37:05.738Z"
+}
