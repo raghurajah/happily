@@ -1,0 +1,17 @@
+{
+  "kind": "question",
+  "id": "a1e00500-38f0-434b-94a8-c9e1949332df",
+  "question": "How are income streams and contributions modeled?",
+  "options": [
+    "Streams attach to a Person OR an Asset with year-level availability; contributions per Person with year toggles",
+    "Streams on persons only with continuous ranges"
+  ],
+  "context": "Depends on the Household/Person decision. User: rental/dividend streams may attach to assets owned by one or more persons; specific income streams can be unavailable in certain years; contributions can be enabled/disabled for specific years.",
+  "status": "open",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:40:37.239Z"
+}
