@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "5fe8916e-0b3a-410f-9d1d-65dfd9430825",
+  "question_id": "9f149ede-a325-4b0c-83d8-0da4d7b5f6ab",
+  "choice": "Manual sync + sync-on-open + best-effort end-of-day sync",
+  "rationale": "Decision 479caa25 establishes that keeping asset values 'updated automatically near-real-time' is a core job of the app, which rules out 'Sync-on-open only' — opening the app is not automatic or near-real-time enough for a household actively tracking retirement trajectory. Pure unattended background polling is eliminated by the OAuth 1.0a constraint stated in the decision context itself (tokens expire at midnight ET and require an interactive verification code to re-authorize, making fully unattended overnight polling unreliable). The only remaining option — manual sync + sync-on-open + best-effort end-of-day sync — satisfies the automatic near-real-time intent (sync-on-open catches up immediately; end-of-day runs while the day's token is still alive) while staying within the OAuth token lifecycle and giving the user an escape hatch via manual sync after a re-auth.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9f149ede-a325-4b0c-83d8-0da4d7b5f6ab"
+    },
+    {
+      "type": "cites",
+      "target": "479caa25-9bd3-4c4b-9c76-ef25468d42c6"
+    }
+  ],
+  "created_at": "2026-06-11T13:40:06.116Z"
+}
