@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "9a20a248-b873-497d-93b0-06b010fd1a5c",
+  "question_id": "b62b88b9-dff7-415a-8418-49f10280f70d",
+  "choice": "Federal MFJ brackets + standard deduction with flat state rate",
+  "rationale": "Binding prior 9032d3c9 explicitly names the Excel's flat tax rate as a known simplification treated as a defect to fix, not behavior to reproduce — this directly eliminates option 2. The decision context further states that capital-gains/basis modeling is explicitly deferred past v1, eliminating option 3. The only remaining option is proper federal MFJ brackets with standard deduction plus a flat state rate: it improves on the Excel's flat rate while staying within the scope boundary that excludes full capital-gains treatment in v1.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "b62b88b9-dff7-415a-8418-49f10280f70d"
+    },
+    {
+      "type": "cites",
+      "target": "9032d3c9-7f48-495f-bd84-8e10469fc851"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:13:29.469Z"
+}
