@@ -1,0 +1,17 @@
+{
+  "kind": "question",
+  "id": "e51cab72-e80b-4e2f-ba8e-badc5595d4e0",
+  "question": "What are the data protection and privacy operational rules?",
+  "options": [
+    "Railway Postgres backups + manual pg_dump; zero third-party telemetry",
+    "Add error-tracking SaaS"
+  ],
+  "context": "Depends on bfe61279 (Railway) and db09d3a5 (secrets handling). Financial data should only touch the deployment and E*TRADE.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T18:10:50.618Z"
+}
