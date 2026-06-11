@@ -1,0 +1,16 @@
+{
+  "kind": "decision",
+  "id": "2aa23484-71f3-40ec-9c64-2513139d809d",
+  "question_id": "1b4e3efd-5871-4dad-b5a4-791d1f0a7ff9",
+  "choice": "Personal household app for Raghu and his wife — single household, not a commercial or multi-user product",
+  "rationale": "Replaces a hand-maintained Excel retirement model that is hard to keep updated; confirmed by user in grooming interview",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "1b4e3efd-5871-4dad-b5a4-791d1f0a7ff9"
+    }
+  ],
+  "created_at": "2026-06-11T13:23:34.920Z"
+}
