@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "2dfab60b-ccf5-46d2-bcb4-5fa916f8f79f",
+  "question_id": "100b7ba2-d7e5-4317-8448-46cacb85ea6f",
+  "choice": "Source on GitHub; Railway auto-deploys the app from the main branch. Drizzle migrations run on deploy",
+  "rationale": "Standard minimal pipeline for a Railway-hosted personal app",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "100b7ba2-d7e5-4317-8448-46cacb85ea6f"
+    },
+    {
+      "type": "cites",
+      "target": "bfe61279-839d-48b5-802a-de0b17536512"
+    },
+    {
+      "type": "cites",
+      "target": "d8fa123f-dc72-40a2-8cfa-45a18035261d"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-12T02:48:45.696Z"
+}
