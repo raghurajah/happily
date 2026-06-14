@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ---------------------------------------------------------------------------
+   Happily theme — data-centric financial-terminal aesthetic (decision 7fb57986)
+   Near-black base, deep-maroon accent tuned for contrast, dense-but-clean data.
+   --------------------------------------------------------------------------- */
+
+@theme {
+  /* Surfaces — near-black, layered for depth */
+  --color-base: #0a0a0c;
+  --color-surface: #131316;
+  --color-elevated: #1b1b20;
+  --color-line: #2a2a31;
+  --color-line-strong: #3a3a43;
+
+  /* Ink */
+  --color-ink: #ececef;
+  --color-muted: #9a9aa4;
+  --color-faint: #62626c;
+
+  /* Deep-maroon accent, brightened just enough for AA contrast on near-black */
+  --color-accent: #c0344e;
+  --color-accent-strong: #d94d66;
+  --color-accent-dim: #3a121c;
+  --color-accent-fg: #fff5f6;
+
+  /* Financial semantics */
+  --color-up: #34c98a;
+  --color-down: #e5564b;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-base);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular figures everywhere numbers live — terminal feel */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+}
+
+/* Subtle scrollbars to keep the dense layout clean */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
 }
