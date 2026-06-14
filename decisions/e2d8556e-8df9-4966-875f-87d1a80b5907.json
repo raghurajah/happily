@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "e2d8556e-8df9-4966-875f-87d1a80b5907",
+  "question_id": "876a0e50-5ef1-4652-a10a-9ef7efdf0f94",
+  "choice": "All mutations are household-scoped Next server actions in lib/actions/* that go through requireHousehold() (resolves session -> householdId, scoping every query/where-clause so a member can't touch another household). Forms are progressive-enhancement <form action={serverAction}> with zod validation + revalidatePath; ownership edited by replace (delete asset_owners then re-insert). Year-availability is captured in the UI as a single {startYear,endYear|null} range + comma-separated excludeYears, persisted to the full Availability jsonb. Balance Snapshots: manual entry and CSV import both write a dated append-only batch (shared batchId, source manual|csv). CSV import uses a tolerant parser (lib/csv.ts: keyword-detected account+value columns, currency parsing) and matches rows to assets by case-insensitive name (exact then contains); unmatched accounts are reported as skipped, not errors. Asset current value = manualValue for manual assets, latest snapshot for synced.",
+  "rationale": "[build-originated] The schema decisions (a5edec0f, b6012bc6, b1ee4eca) and screens (99d5cbfb) defined the entities and surfaces but not the write-path contracts: household-scoping via session, the single-range availability UI compromise, and the tolerant name-based CSV matching (E*TRADE export format is unspecified, so match by asset name rather than a fixed layout). A future builder extending CRUD or sync needs these.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "876a0e50-5ef1-4652-a10a-9ef7efdf0f94"
+    },
+    {
+      "type": "cites",
+      "target": "a5edec0f-b0d8-40a5-8107-2cbf2323161c"
+    },
+    {
+      "type": "cites",
+      "target": "b6012bc6-6a57-419c-87b1-b7f0114dc825"
+    },
+    {
+      "type": "cites",
+      "target": "b1ee4eca-d743-468a-bff3-9032adb66a1c"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:33:54.589Z"
+}
