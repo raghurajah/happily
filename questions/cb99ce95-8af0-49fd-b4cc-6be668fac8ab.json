@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "cb99ce95-8af0-49fd-b4cc-6be668fac8ab",
+  "question": "How is the Monte Carlo engine structured, and what are its key numeric contracts?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:15:37.192Z"
+}
