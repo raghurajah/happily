@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "2949f831-3153-4af4-9eaf-f33214f2dcdb",
+  "question_id": "e73b33d5-a9e3-4356-b1af-2b1461eb14c4",
+  "choice": "Domain model: a Scenario is a named assumption set (retirement age, expenses, life expectancy, return/inflation distributions, tax, income streams, contributions). Running a Scenario produces a Forecast: frozen per-year percentile bands (p10/p25/p50/p75/p90 of total assets) plus success probability per age. Multiple Forecasts can coexist for comparison. Exactly one Scenario is designated the active Plan, whose Forecast is the tracking baseline. A Snapshot is a dated set of actual account balances from sync.",
+  "rationale": "User confirmed structure, renamed Projection to Forecast, and wants multiple comparable Forecasts with a single active Plan",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "e73b33d5-a9e3-4356-b1af-2b1461eb14c4"
+    },
+    {
+      "type": "supersedes",
+      "target": "458fce0c-f139-4c8b-9329-6c744f712460",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:09:11.032Z"
+}

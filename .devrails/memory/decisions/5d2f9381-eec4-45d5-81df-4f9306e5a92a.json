@@ -1,0 +1,21 @@
+{
+  "kind": "decision",
+  "id": "5d2f9381-eec4-45d5-81df-4f9306e5a92a",
+  "question_id": "9f149ede-a325-4b0c-83d8-0da4d7b5f6ab",
+  "choice": "Three sync triggers: manual sync button, sync-on-open, and a best-effort end-of-day scheduled sync (runs only if the day's E*TRADE token is still renewable; otherwise show 'stale since X' and prompt one-tap reconnect). Every successful sync persists a dated balance snapshot.",
+  "rationale": "User wants manual + on-open + EOD if feasible; EOD is best-effort because E*TRADE tokens die at midnight ET and need interactive re-auth",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9f149ede-a325-4b0c-83d8-0da4d7b5f6ab"
+    },
+    {
+      "type": "supersedes",
+      "target": "5fe8916e-0b3a-410f-9d1d-65dfd9430825",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "created_at": "2026-06-11T13:40:16.232Z"
+}

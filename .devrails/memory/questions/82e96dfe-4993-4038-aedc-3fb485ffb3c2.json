@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "82e96dfe-4993-4038-aedc-3fb485ffb3c2",
+  "question": "How does the app run and freeze a Forecast from a Scenario, and how is the active Plan enforced?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:45:05.003Z"
+}

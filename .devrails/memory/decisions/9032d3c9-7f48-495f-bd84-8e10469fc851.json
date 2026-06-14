@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "9032d3c9-7f48-495f-bd84-8e10469fc851",
+  "question_id": "64be3181-c9e6-4dd3-bc37-1af43fee815e",
+  "choice": "The v1 engine improves on the Excel's mechanics out of the gate — no Excel-parity requirement. Known Excel simplifications (flat tax rate, missing RMDs, crude income modeling) are treated as defects to fix, not behavior to reproduce.",
+  "rationale": "User explicitly chose 'improve out of the gate' over parity-first validation",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "64be3181-c9e6-4dd3-bc37-1af43fee815e"
+    },
+    {
+      "type": "supersedes",
+      "target": "91a39b3c-b4cd-46ad-b238-a26119baec2f",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:11:08.000Z"
+}

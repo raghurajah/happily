@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "ea878ab6-5f16-4051-983b-9955b4232471",
+  "question_id": "82e96dfe-4993-4038-aedc-3fb485ffb3c2",
+  "choice": "lib/forecast.ts adapts persisted state -> engine EngineInput: starting balances aggregate per bucket from each asset's LATEST snapshot (falling back to a manual asset's manualValue), nonDrawableGrowth is the value-weighted average growthRate of non-drawable assets, streams/contributions map from rows (with optional per-scenario overrides), startYear = current calendar year. The run action (runForecastAction) computes inputHash = sha256(JSON(engineInput)), derives a numeric seed from its first 8 hex chars, runs 10k trials, and INSERTS a frozen forecasts row (bands, successCurve, seed, inputHash, startingInputs incl. successProbability + startingBalances). Multiple Forecasts per scenario coexist (no upsert). Active Plan: setActivePlan runs a transaction that clears is_plan across the household then sets the one, backed by the partial unique index one_active_plan_per_household. ForecastBand/SuccessPoint schema jsonb types mirror the engine output exactly (incl. age).",
+  "rationale": "[build-originated] 2949f831 defined Scenario->Forecast->Plan conceptually but not the I/O adapter, the snapshot-vs-manualValue starting-balance rule, the deterministic seed-from-input-hash freezing, or the transactional single-Plan switch. A future builder running or re-forecasting needs these.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "82e96dfe-4993-4038-aedc-3fb485ffb3c2"
+    },
+    {
+      "type": "cites",
+      "target": "2949f831-3153-4af4-9eaf-f33214f2dcdb"
+    },
+    {
+      "type": "cites",
+      "target": "71b1665b-2b3d-49f2-96ce-90884caf64db"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:45:05.004Z"
+}

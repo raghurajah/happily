@@ -1,0 +1,21 @@
+{
+  "kind": "decision",
+  "id": "913da4c1-f27f-4d4d-9b74-a649de94201e",
+  "question_id": "16dee32e-cb4b-4c7c-88dc-baa1024bb49f",
+  "choice": "Headline metric: probability of not running out of money through life expectancy, computed by Monte Carlo simulation (per-age success probability, as in the Excel's 10k-trial data table)",
+  "rationale": "User: the main question the model answers is 'will I run out of money in retirement and how to avoid it'; Excel already implements this as P(assets>0) at checkpoint ages",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "16dee32e-cb4b-4c7c-88dc-baa1024bb49f"
+    },
+    {
+      "type": "supersedes",
+      "target": "b0da42fa-0152-494b-95f9-ccc098fd27a4",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "created_at": "2026-06-11T13:32:19.656Z"
+}

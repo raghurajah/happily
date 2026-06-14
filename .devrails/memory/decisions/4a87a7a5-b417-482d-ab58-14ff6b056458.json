@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "4a87a7a5-b417-482d-ab58-14ff6b056458",
+  "question_id": "a58072f7-ecb6-480d-a827-3d137ad46c89",
+  "choice": "Railway Postgres accessed via Drizzle ORM (with drizzle-kit migrations) — already decided as d8fa123f",
+  "rationale": "Duplicate escalation of an already-confirmed decision; closing against the existing precedent",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "a58072f7-ecb6-480d-a827-3d137ad46c89"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-12T02:43:32.550Z"
+}

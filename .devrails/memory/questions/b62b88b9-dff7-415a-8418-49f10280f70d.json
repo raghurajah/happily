@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "b62b88b9-dff7-415a-8418-49f10280f70d",
+  "question": "What tax model does the v1 simulation engine use?",
+  "options": [
+    "Federal MFJ brackets + standard deduction with flat state rate",
+    "Flat overall tax rate like the Excel",
+    "Full tax engine incl. capital gains"
+  ],
+  "context": "Depends on 9032d3c9 (improve out of the gate). Excel used flat 42.6%. Capital-gains/basis modeling explicitly deferred past v1.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:13:29.469Z"
+}

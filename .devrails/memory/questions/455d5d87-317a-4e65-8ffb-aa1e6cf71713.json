@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "455d5d87-317a-4e65-8ffb-aa1e6cf71713",
+  "question": "How do users authenticate and what is the permission model?",
+  "options": [
+    "Auth.js credentials with closed membership and no roles",
+    "Google SSO",
+    "Shared passcode"
+  ],
+  "context": "Depends on 1306ca6a (one household per deployment, self-deployable) and bfe61279 (hosted on Railway, public internet, brokerage data behind login).",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:02:34.510Z"
+}

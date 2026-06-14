@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "63cad1ec-86ad-4081-a6c5-16cc5cdcf183",
+  "question": "When are balance Snapshots created and can they be edited?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-12T02:48:30.696Z"
+}

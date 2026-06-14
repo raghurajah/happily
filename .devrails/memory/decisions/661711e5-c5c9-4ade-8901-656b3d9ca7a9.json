@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "661711e5-c5c9-4ade-8901-656b3d9ca7a9",
+  "question_id": "71ebe28b-c3f1-4354-b493-f4cf3f12cb43",
+  "choice": "Household with 1+ Persons; per-person birth year and retirement age; household-level expenses; horizon = youngest reaches life expectancy",
+  "rationale": "Three binding priors converge on this answer. (1) 1306ca6a explicitly states all personal data — including 'people' — is configuration/data with nothing hard-coded, which requires Person to be a first-class model entity rather than a single baked-in joint entity. (2) b10161a1 pins RMD start age to birth year 'per current law, 73/75 by birth year,' which only makes sense if each person's birth year is tracked individually. (3) 2949f831's Scenario carries retirement age and life expectancy as inputs; in a household with two people (the original deployers are a couple, per 1306ca6a context), those must be per-person fields or the model cannot correctly time income cessation and horizon for each spouse. Household-level expenses and the youngest-person horizon follow naturally: expenses are a joint household budget, and the plan must fund the surviving spouse through their life expectancy.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "71ebe28b-c3f1-4354-b493-f4cf3f12cb43"
+    },
+    {
+      "type": "cites",
+      "target": "1306ca6a-2d88-49db-8b89-2de02cbc6519"
+    },
+    {
+      "type": "cites",
+      "target": "b10161a1-1af5-4ddc-8bdd-1395049518e0"
+    },
+    {
+      "type": "cites",
+      "target": "2949f831-3153-4af4-9eaf-f33214f2dcdb"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:40:14.803Z"
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "c1c6e5f9-b474-4250-8f55-d546107124dd",
+  "question_id": "455d5d87-317a-4e65-8ffb-aa1e6cf71713",
+  "choice": "Auth.js (NextAuth v5) with email+password credentials and session cookies. Household members are created at setup (seed/first-run); no open signup. No SSO providers in v1. No roles — all household members see and edit everything.",
+  "rationale": "Private single-household deployment needs a real login but nothing more; user confirmed",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "455d5d87-317a-4e65-8ffb-aa1e6cf71713"
+    },
+    {
+      "type": "supersedes",
+      "target": "f50de38b-48df-42c8-8d0a-7501ef1965de",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:02:36.738Z"
+}
