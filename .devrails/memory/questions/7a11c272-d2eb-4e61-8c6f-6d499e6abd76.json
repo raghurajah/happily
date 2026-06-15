@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "7a11c272-d2eb-4e61-8c6f-6d499e6abd76",
+  "question": "Vitest is locked and the engine suite is now requirements/spec-based (not Excel-diffing) — agreed. Three things remain: (1) Branch model — `main` as the Railway-tracked release branch with `dev` as the integration branch you promote from (`dev → main` = deploy), or the separate-release-branch variant? (2) Given no branch protection on `main`, is the engine suite **advisory CI only** (the manual `dev→main` promotion is the only gate), or do you want it as a **blocking required check on PRs into `dev`**? (3) Effort split — concentrate v1 spend on the engine spec suite and defer Playwright until visualization stabilizes, yes?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "6a9c2d28ed80a50a022e6f72d9ace13ec5b576f7"
+  },
+  "created_at": "2026-06-15T19:11:11.543Z"
+}
