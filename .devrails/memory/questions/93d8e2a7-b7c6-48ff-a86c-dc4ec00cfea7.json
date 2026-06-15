@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "93d8e2a7-b7c6-48ff-a86c-dc4ec00cfea7",
+  "question": "How do code changes reach Railway — Railway's native deploy-on-push, or a GitHub Actions pipeline that gates on typecheck/lint/test first?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "0c9b09d050d67bb46f1b62d7cd9e485947f8227b"
+  },
+  "created_at": "2026-06-15T18:38:08.982Z"
+}
