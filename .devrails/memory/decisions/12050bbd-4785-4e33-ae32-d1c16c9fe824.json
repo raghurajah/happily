@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "12050bbd-4785-4e33-ae32-d1c16c9fe824",
+  "question_id": "7b8aec1e-0199-4d06-86d4-d04c00ba3700",
+  "choice": "how about a nextjs app with a postgres backend? I was hoping to deploy it in railway.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: TypeScript / Node.js throughout, with the Monte Carlo core implemented as a pure-function library that can later be extracted into a worker thread or separate process if latency becomes a problem. Python (FastAPI + NumPy/SciPy) is faster for raw numeric throughput but adds a second language, a second deployment unit, and a cross-language serialization boundary. For a closed, low-concurrency tool the Node path is simpler and still fast enough — 10 000 paths × 40 years runs in well under a second in compiled TS with typed arrays.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "7b8aec1e-0199-4d06-86d4-d04c00ba3700"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "06c5bc834ead642e33b1d4d4f75a31b7e871087a"
+  },
+  "created_at": "2026-06-15T02:10:24.904Z"
+}
