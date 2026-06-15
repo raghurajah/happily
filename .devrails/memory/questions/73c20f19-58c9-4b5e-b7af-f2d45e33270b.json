@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "73c20f19-58c9-4b5e-b7af-f2d45e33270b",
+  "question": "On Railway, do you run the Next.js app and the pg-boss job worker (which runs the scheduled jobs + Monte Carlo) as two separate services from the monorepo, or as a single combined service?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "0bc079f6b34d224752a4996619d4159785f71889"
+  },
+  "created_at": "2026-06-15T18:27:56.260Z"
+}
