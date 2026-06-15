@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "ff6afc84-4c15-4973-a447-0a35b63eeeec",
+  "question_id": "492a9f07-576b-4725-ba7b-669a2179ad49",
+  "choice": "Drizzle ORM",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Drizzle ORM (TypeScript-first, SQL-like, lightweight migrations).)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "492a9f07-576b-4725-ba7b-669a2179ad49"
+    },
+    {
+      "type": "cites",
+      "target": "12050bbd-4785-4e33-ae32-d1c16c9fe824"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "c5641c401420e1239b46477784e4d6a367c3cc89"
+  },
+  "created_at": "2026-06-15T14:01:40.014Z"
+}
