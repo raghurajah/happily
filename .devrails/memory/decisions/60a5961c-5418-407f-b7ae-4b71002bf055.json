@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "60a5961c-5418-407f-b7ae-4b71002bf055",
+  "question_id": "34bc3a3d-c201-4756-ac7f-a9b55a33463a",
+  "choice": "Use Railway logs only for v1 — no Sentry/error tracking; structured console logging captured by Railway's log viewer. Add stronger observability later if needed.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Sentry for error + exception tracking on both web and worker, plus structured console logging (captured by Railway's log viewer). Skip metrics/APM and dashboards for v1.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "34bc3a3d-c201-4756-ac7f-a9b55a33463a"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "218fd223872ab22691f86c23569d38f1486eed0e"
+  },
+  "created_at": "2026-06-15T14:13:02.552Z"
+}

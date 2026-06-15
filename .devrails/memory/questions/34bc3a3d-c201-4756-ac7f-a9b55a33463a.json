@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "34bc3a3d-c201-4756-ac7f-a9b55a33463a",
+  "question": "What error tracking / observability do you want for v1?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "218fd223872ab22691f86c23569d38f1486eed0e"
+  },
+  "created_at": "2026-06-15T14:13:02.552Z"
+}
