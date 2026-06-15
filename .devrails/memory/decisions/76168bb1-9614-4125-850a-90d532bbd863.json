@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "76168bb1-9614-4125-850a-90d532bbd863",
+  "question_id": "78f7bf5c-4e28-4eba-9976-19e3915bef20",
+  "choice": "Shaded percentile bands (P10/P25/P50/P75/P90) with the median line emphasized, not a spaghetti plot of all paths",
+  "rationale": "This matches how ProjectionLab/BoldIn present probabilistic outcomes and is far more readable than overplotting thousands of paths. The engine already produces a distribution per year, so we render quantiles, not raw paths — also keeps the payload small (a few series of yearly percentiles vs. 10k×40 points). Probability-of-success (the headline number) is shown alongside as a stat, derived from the share of paths not depleting.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "78f7bf5c-4e28-4eba-9976-19e3915bef20"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "7079dbf600d916d338f07273426846db63bf002d"
+  },
+  "created_at": "2026-06-15T19:20:05.160Z"
+}
