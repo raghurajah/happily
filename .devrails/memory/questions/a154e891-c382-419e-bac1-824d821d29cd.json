@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "a154e891-c382-419e-bac1-824d821d29cd",
+  "question": "What is this project's objective?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "095ea21f158a676bdf561e48fcf4bd3ec77a17cb"
+  },
+  "created_at": "2026-06-15T02:06:12.261Z"
+}
