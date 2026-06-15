@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "ee95519b-0b30-4618-9de0-029111e50f29",
+  "question_id": "86257bd3-2e1f-48d9-96e3-f7233050892f",
+  "choice": "Recharts (via shadcn/ui's chart wrapper)",
+  "rationale": "shadcn/ui is already the confirmed component layer (eb1ac338), and its first-party chart components wrap Recharts — so styling, theming, and tooltips come for free and stay consistent with the rest of the UI. Recharts handles the two v1 chart types (percentile fan/area bands and multi-series time lines) cleanly. visx/D3 give more control for exotic visuals but cost far more bespoke code than a closed personal tool warrants; ECharts/Highcharts are heavier and (Highcharts) licensed. Pick Recharts now and revisit only if a specific chart can't be expressed in it.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "86257bd3-2e1f-48d9-96e3-f7233050892f"
+    },
+    {
+      "type": "cites",
+      "target": "eb1ac338-4195-42a3-92a1-4858c9053f10"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "0cfb43097c5ccc6393aa6e2501ca629414d62ef3"
+  },
+  "created_at": "2026-06-15T19:18:47.880Z"
+}
