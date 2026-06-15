@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "0825e3ec-328c-4fa7-b6ac-7abd71e4dccc",
+  "question": "How should the codebase be structured so the Monte Carlo engine is shareable between the web app and the worker?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e2a4aef884a42de4930b86de860d7609bba1626"
+  },
+  "created_at": "2026-06-15T14:06:28.224Z"
+}
