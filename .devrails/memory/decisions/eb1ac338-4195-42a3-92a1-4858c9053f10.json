@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "eb1ac338-4195-42a3-92a1-4858c9053f10",
+  "question_id": "1002bbc8-24ad-415c-a683-5c35c33800f9",
+  "choice": "Tailwind + shadcn/ui (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Tailwind CSS + shadcn/ui (Radix primitives), with a charting lib chosen later in the Visualization area.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "1002bbc8-24ad-415c-a683-5c35c33800f9"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "d891c83600442b2031c3adf43ff349684ab911bd"
+  },
+  "created_at": "2026-06-15T14:14:40.697Z"
+}
