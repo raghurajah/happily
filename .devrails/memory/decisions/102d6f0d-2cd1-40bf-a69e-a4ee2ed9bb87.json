@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "102d6f0d-2cd1-40bf-a69e-a4ee2ed9bb87",
+  "question_id": "375cd65b-7569-4615-acdc-bb2ad1f3bb6e",
+  "choice": "Happily",
+  "rationale": "The decision context explicitly states the user renamed the product and that this supersedes prior decision b816cb03-174f-4518-8919-47b63d8c3575, which held the name as Glidepath. With only two options (Happily | Glidepath) and Glidepath being the old name now superseded, the rename target is unambiguously Happily.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "375cd65b-7569-4615-acdc-bb2ad1f3bb6e"
+    },
+    {
+      "type": "cites",
+      "target": "b816cb03-174f-4518-8919-47b63d8c3575"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:01:11.309Z"
+}

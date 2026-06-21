@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "4f657342-736e-4013-9d80-806fd05393d6",
+  "question": "How does Happily get E*TRADE data given no production API key exists yet?",
+  "options": [
+    "Interactive user-present OAuth + CSV/manual bridge; background EOD sync deferred",
+    "Wait for key before building",
+    "Screen scraping"
+  ],
+  "context": "Supersedes 5d2f9381 (sync triggers incl. best-effort EOD). User has not started the E*TRADE production key process; all API access requires a consumer key; user accepts no background sync for now.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:36:30.681Z"
+}

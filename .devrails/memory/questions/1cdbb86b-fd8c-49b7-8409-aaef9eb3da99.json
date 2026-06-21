@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "1cdbb86b-fd8c-49b7-8409-aaef9eb3da99",
+  "question": "What withdrawal strategies does the engine support for funding retirement spending?",
+  "options": [
+    "Per-Scenario choice: post-tax-first / tax-deferred-first / time-keyed blend schedule",
+    "Hard-coded tax-deferred-first like Excel",
+    "Single optimal strategy computed by app"
+  ],
+  "context": "Depends on 9a5db500 (bracket tax model) and b10161a1 (RMDs). User wants the strategy to be a user-supplied per-Scenario input including a dynamic year-keyed blend (e.g. year 1: 80% post-tax, year 5: 62% post-tax, year 10: 90% tax-deferred).",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:20:45.500Z"
+}

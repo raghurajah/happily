@@ -1,0 +1,17 @@
+{
+  "kind": "question",
+  "id": "31e95a94-c2b5-4c4b-98c5-d341a7024e6c",
+  "question": "What screens and features are in the v1 surface?",
+  "options": [
+    "Dashboard + Scenarios/Forecasts + Assets with holdings attribution + Allocation view + Household settings",
+    "Balances-only minimal surface"
+  ],
+  "context": "Depends on 5edebac0 (tracking chart), 2949f831 (Scenario/Forecast), a5edec0f (assets incl. manual), db09d3a5 (sync/CSV bridge). User added position-level holdings attribution and allocation/rebalancing; excluded expense tracking and notifications.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:45:25.772Z"
+}

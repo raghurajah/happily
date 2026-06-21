@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "e73b33d5-a9e3-4356-b1af-2b1461eb14c4",
+  "question": "What are the core domain concepts and what is 'the Plan'?",
+  "options": [
+    "Scenario/Forecast/Plan/Snapshot model with one active Plan",
+    "Single implicit plan like the Excel",
+    "Freeform saved simulations"
+  ],
+  "context": "Depends on 913da4c1 (headline metric) and 479caa25 (core jobs). User refined vocabulary: simulation output is called a Forecast (not Projection); multiple Forecasts may exist for comparison; exactly one active Plan.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:09:09.196Z"
+}

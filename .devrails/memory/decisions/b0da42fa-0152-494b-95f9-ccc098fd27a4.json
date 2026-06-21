@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "b0da42fa-0152-494b-95f9-ccc098fd27a4",
+  "question_id": "16dee32e-cb4b-4c7c-88dc-baa1024bb49f",
+  "choice": "Probability of not running out of money through life expectancy via Monte Carlo",
+  "rationale": "Two binding priors converge on this answer. Decision 2aa23484 establishes the app replaces an existing Excel model — the decision context confirms that model runs 10 000 Monte Carlo trials and reports P(assets>0) at checkpoint ages, so continuity with the incumbent tool points directly to this metric. Decision 479caa25 establishes the headline job-to-be-done as knowing 'how they are tracking' against the retirement plan, and the user's own framing of the primary question ('will I run out of money in retirement?') maps precisely to a survival probability, not a net-worth level or a withdrawal-rate scalar. A single deterministic projection cannot capture the uncertainty the user cares about, and a safe-withdrawal-rate number is a planning input rather than a tracking output — neither serves the 'actual vs plan' core job as directly as a Monte Carlo survival probability.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "16dee32e-cb4b-4c7c-88dc-baa1024bb49f"
+    },
+    {
+      "type": "cites",
+      "target": "2aa23484-71f3-40ec-9c64-2513139d809d"
+    },
+    {
+      "type": "cites",
+      "target": "479caa25-9bd3-4c4b-9c76-ef25468d42c6"
+    }
+  ],
+  "created_at": "2026-06-11T13:32:10.640Z"
+}

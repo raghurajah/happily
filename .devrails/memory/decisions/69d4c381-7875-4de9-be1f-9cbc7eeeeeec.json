@@ -1,0 +1,40 @@
+{
+  "kind": "decision",
+  "id": "69d4c381-7875-4de9-be1f-9cbc7eeeeeec",
+  "question_id": "cb99ce95-8af0-49fd-b4cc-6be668fac8ab",
+  "choice": "Pure TS module at lib/engine, no I/O. Seeded RNG = mulberry32 + Box-Muller normals (SeededRng); per-trial seed derived as imul(seed,1000003)+i+1. simulateTrial runs one deterministic annual loop to the youngest person's life expectancy with a TrialHooks seam {computeTax, rmdFloor}; buildHooks wires the real tax+RMD. Yearly order: contributions in -> streams offset spend -> RMD floor (excess reinvested post-tax) -> strategy withdrawal -> income tax paid from assets -> investment growth. Federal tax = 2024 bracket baseline (single + MFJ) with standard deduction, thresholds/deduction scaled by the trial's cumulative inflation factor; state = flat rate on the post-deduction base. RMD = IRS Uniform Lifetime Table, start age 73 (<1960) / 75 (>=1960), max requirement across household persons on the single tax-deferred bucket. runForecast reduces N trials to per-year p10/p25/p50/p75/p90 (linear-interpolated quantiles of total assets) and a per-age success curve = CUMULATIVE survival (P(never insolvent through that age), monotonic non-increasing); headline successProbability = survival through life expectancy. 10k x ~37y runs in ~160ms.",
+  "rationale": "[build-originated] Decisions 71b1665b/10d3df55/9a5db500/b10161a1/5c68ced9 fixed the WHAT (pure seeded engine, normal draws, real brackets+RMD, three strategies) but not these contracts: RNG algorithm, per-trial seeding, the yearly operation order, tax paid-from-assets vs gross-up, household RMD = max-across-persons, success curve = cumulative survival, and quantile interpolation. A future builder needs these to extend or re-derive Forecasts.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "cb99ce95-8af0-49fd-b4cc-6be668fac8ab"
+    },
+    {
+      "type": "cites",
+      "target": "71b1665b-2b3d-49f2-96ce-90884caf64db"
+    },
+    {
+      "type": "cites",
+      "target": "10d3df55-1349-41e1-9ccc-d6bb543c7106"
+    },
+    {
+      "type": "cites",
+      "target": "9a5db500-80e4-4a0c-9363-109e16f88687"
+    },
+    {
+      "type": "cites",
+      "target": "b10161a1-1af5-4ddc-8bdd-1395049518e0"
+    },
+    {
+      "type": "cites",
+      "target": "5c68ced9-f9f3-4bb0-adf5-bf0524cc8156"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:15:37.193Z"
+}

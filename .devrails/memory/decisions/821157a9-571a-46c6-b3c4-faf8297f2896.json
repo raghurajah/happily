@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "821157a9-571a-46c6-b3c4-faf8297f2896",
+  "question_id": "4f657342-736e-4013-9d80-806fd05393d6",
+  "choice": "Interactive user-present OAuth + CSV/manual bridge; background EOD sync deferred",
+  "rationale": "Binding prior 3f1b6b21 commits to direct E*TRADE API access and explicitly rules out any third-party aggregator or screen scraping, eliminating option 3. 'Wait for key before building' is incompatible with the established architecture (bfe61279 Railway deploy, 5d2f9381 sync triggers, a5edec0f synced vs. manual asset model) which presupposes a functioning app. The decision context itself states the user accepts no background sync for now, making the deferred-EOD variant the only internally consistent path: build OAuth + sandbox/dev-key flows interactively, allow CSV or manual-entry bridging (already supported by a5edec0f's manual asset type) until the production key is issued, and defer the Railway cron / best-effort EOD sync (bfe61279, 5d2f9381) until then.",
+  "provenance": "architect-resolved",
+  "trust": "unconfirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "4f657342-736e-4013-9d80-806fd05393d6"
+    },
+    {
+      "type": "cites",
+      "target": "3f1b6b21-be8e-40fc-b125-839bae8989cf"
+    },
+    {
+      "type": "cites",
+      "target": "a5edec0f-b0d8-40a5-8107-2cbf2323161c"
+    },
+    {
+      "type": "cites",
+      "target": "bfe61279-839d-48b5-802a-de0b17536512"
+    },
+    {
+      "type": "cites",
+      "target": "5d2f9381-eec4-45d5-81df-4f9306e5a92a"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:36:30.682Z"
+}

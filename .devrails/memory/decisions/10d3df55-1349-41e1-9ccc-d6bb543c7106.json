@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "10d3df55-1349-41e1-9ccc-d6bb543c7106",
+  "question_id": "2b98e8b8-ba1d-4c1d-bb2d-521b544ada4f",
+  "choice": "v1 sampling model: independent annual normal draws for return and inflation, with mean and SD as per-Scenario inputs (defaults from the Excel: return 9.51%/7.04%, inflation 3.7%/2.8%). The Excel's +20% return cap is removed (asymmetric distortion). Historical bootstrap sampling is a deferred post-v1 alternative sampling model selectable per Scenario.",
+  "rationale": "User confirmed; cap trimmed booms while keeping crashes",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2b98e8b8-ba1d-4c1d-bb2d-521b544ada4f"
+    },
+    {
+      "type": "supersedes",
+      "target": "85b55325-8dac-4715-9381-f2c823161ce3",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:22:59.352Z"
+}

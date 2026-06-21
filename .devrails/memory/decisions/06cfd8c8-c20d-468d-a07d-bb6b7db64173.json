@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "06cfd8c8-c20d-468d-a07d-bb6b7db64173",
+  "question_id": "d7ca9a63-4a5d-4867-bdd2-83205bc04732",
+  "choice": "lib/insight/* (pure, 8 tests) + queries.ts (DB). Attribution (attribution.ts): diff the two most recent position batches; per holding ΔMarketValue = oldQty·(newPrice−oldPrice) [price effect] + (newQty−oldQty)·newPrice [flow effect], summing to ΔMV; opened/closed positions fall back to the available price. Allocation (allocation.ts): classifyHolding via a built-in symbol→AssetClass map (us_equity/intl_equity/bonds/cash/real_estate, unknown→other); computeAllocation aggregates latest-batch holdings per class with current% and drift vs the household.targetAllocation jsonb (fractions). Rebalance: rebalanceSuggestions = target·total − currentValue per class, dropping sub- noise, netting to ~0; no optimization or tax-lot logic (v1). UI: attribution 'what moved my number' on Assets, allocation+drift+rebalance on a new /allocation screen (added to nav), target editor persists percentages as fractions. Positions seeded by E*TRADE sync (E6-S3).",
+  "rationale": "[build-originated] 99d5cbfb listed attribution/allocation/rebalance as v1 surfaces but not the math: the price-vs-flow decomposition, the symbol→asset-class map, target stored as household jsonb fractions, and drift-to-target rebalancing that nets to zero with a noise threshold. Pure modules keep it unit-testable independent of live position data.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d7ca9a63-4a5d-4867-bdd2-83205bc04732"
+    },
+    {
+      "type": "cites",
+      "target": "99d5cbfb-7010-4c0d-b63c-eb26f323fe00"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T04:06:39.217Z"
+}

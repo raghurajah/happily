@@ -1,0 +1,14 @@
+{
+  "kind": "question",
+  "id": "16dee32e-cb4b-4c7c-88dc-baa1024bb49f",
+  "question": "What is the app's headline output metric?",
+  "options": [
+    "Probability of not running out of money through life expectancy via Monte Carlo",
+    "Single deterministic projection of net worth",
+    "Safe withdrawal rate number"
+  ],
+  "context": "Depends on decision 479caa25-9bd3-4c4b-9c76-ef25468d42c6 (core jobs). Excel model runs 10000 Monte Carlo trials and reports P(assets>0) at checkpoint ages; user states the main question is 'will I run out of money in retirement and how to avoid it'.",
+  "status": "answered",
+  "edges": [],
+  "created_at": "2026-06-11T13:32:10.639Z"
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "c7babe6b-34ff-456a-9bb5-3c448ccfcd43",
+  "question_id": "b4b7bd30-a452-4941-8d0a-45a287f08ec8",
+  "choice": "lib/tracking.ts (DB) + lib/tracking-math.ts (pure, tested). Layer 1 = the active Plan's latest frozen Forecast bands. Layer 2 actual = net-worth trajectory: at each distinct snapshot date, sum each asset's latest balance as-of that date (carry-forward), falling back to manualValue; net worth by bucket uses each asset's latest balance/manualValue. Achieved percentile = piecewise-linear interpolation of today's net worth against the Plan band's 5 points (p10/p25/p50/p75/p90) for the current year, extrapolated beyond p10/p90. Layer 3 re-forecast = runForecast over buildEngineInput(plan, currentYear), i.e. 10k trials seeded from TODAY's actual balances under the Plan's assumptions, giving forward bands + the headline successProbability. Staleness = days since most recent snapshot. The dashboard headline success uses the re-forecast (not the frozen Plan) so it stays current with actuals. Pure/DB split keeps the math unit-testable.",
+  "rationale": "[build-originated] 5edebac0 specified the three layers conceptually; this captures the computation contracts: carry-forward net-worth trajectory, 5-point percentile interpolation, re-forecast = engine over current snapshots under Plan assumptions, headline tracks the re-forecast, and the pure/DB split for testability.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "b4b7bd30-a452-4941-8d0a-45a287f08ec8"
+    },
+    {
+      "type": "cites",
+      "target": "5edebac0-4371-4b0b-b574-45cc379a1c26"
+    },
+    {
+      "type": "cites",
+      "target": "913da4c1-f27f-4d4d-9b74-a649de94201e"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:51:33.712Z"
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "e65634d9-e5e5-4ef3-9304-19b12b39490b",
+  "question_id": "d95b05af-618f-4a46-984c-fce74b9e9edd",
+  "choice": "NextAuth v5 (Auth.js) with a Credentials provider validating email+password (zod-checked) against the users table with bcryptjs; JWT session strategy carrying user id + householdId. Split config: edge-safe auth.config.ts (no DB, providers:[], authorized callback gates all routes) used by Next 16 proxy.ts; full auth.ts (Credentials + DB) used by the API route and server components. Closed membership seeded via scripts/seed.ts (db:seed; SEED_EMAIL/PASSWORD/NAME/HOUSEHOLD), idempotent on email; no public signup. The (app) layout also re-checks the session (defense in depth).",
+  "rationale": "[build-originated] Decision c1c6e5f9 fixed Auth.js+credentials+closed-membership but not the session strategy or edge-middleware structure. JWT (not DB sessions) avoids an adapter for a credentials-only closed app; the split config keeps DB/bcrypt out of the edge runtime (Next 16 renamed middleware->proxy).",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d95b05af-618f-4a46-984c-fce74b9e9edd"
+    },
+    {
+      "type": "cites",
+      "target": "c1c6e5f9-b474-4250-8f55-d546107124dd"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "391f63686d552735cfe176531942a2a87b5e6e37"
+  },
+  "created_at": "2026-06-14T03:04:58.665Z"
+}

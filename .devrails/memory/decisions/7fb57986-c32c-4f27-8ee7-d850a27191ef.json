@@ -1,0 +1,25 @@
+{
+  "kind": "decision",
+  "id": "7fb57986-c32c-4f27-8ee7-d850a27191ef",
+  "question_id": "50409d5c-e100-4bfc-aff8-2dcdabca390b",
+  "choice": "Design language: data-centric, immersive financial-terminal aesthetic — near-black base with deep-maroon accent (palette may be tuned for cleanliness/contrast), dense but clean data display. Fully responsive; mobile browser access is required, no native app.",
+  "rationale": "User wants immersive data-centric look with near-black + deep maroon, mobile-browser-first access",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "50409d5c-e100-4bfc-aff8-2dcdabca390b"
+    },
+    {
+      "type": "supersedes",
+      "target": "69bd7a07-c395-461f-96f5-f9f3b4895ba5",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T16:46:08.752Z"
+}

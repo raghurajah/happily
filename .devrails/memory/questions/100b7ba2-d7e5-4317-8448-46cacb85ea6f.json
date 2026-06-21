@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "100b7ba2-d7e5-4317-8448-46cacb85ea6f",
+  "question": "What is the deployment workflow?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-12T02:48:45.695Z"
+}

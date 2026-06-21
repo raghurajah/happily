@@ -1,0 +1,21 @@
+{
+  "kind": "decision",
+  "id": "01d42543-7d57-4966-9c6b-51d026978786",
+  "question_id": "b77743bc-2dd2-443d-b83b-49c414c46bba",
+  "choice": "Single full-stack Next.js app (existing Next 16 / React 19 / TS / Tailwind 4 scaffold): UI + API routes in one service, Monte Carlo engine runs in-process server-side, Railway cron hits an internal /api/sync route. No separate backend.",
+  "rationale": "Personal-scale app; simulation is trivial compute; one service minimizes Railway cost and management",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "b77743bc-2dd2-443d-b83b-49c414c46bba"
+    },
+    {
+      "type": "supersedes",
+      "target": "744aaeab-abe5-4526-96e7-fb4ffb57e794",
+      "reason": "superseded-by-evolution"
+    }
+  ],
+  "created_at": "2026-06-11T14:57:11.979Z"
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "2b98e8b8-ba1d-4c1d-bb2d-521b544ada4f",
+  "question": "How are market returns and inflation modeled in the v1 Monte Carlo?",
+  "options": [
+    "Independent normal draws with per-Scenario mean/SD and no return cap",
+    "Excel model with +20% return cap",
+    "Historical bootstrap sampling"
+  ],
+  "context": "Depends on 9032d3c9 (improve out of the gate) and 2949f831 (Scenario model). Excel: return N(9.51%,7.04%) capped at +20%, inflation N(3.7%,2.8%). Historical bootstrap deferred to post-v1 as an alternative sampling model per Scenario.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:22:57.278Z"
+}

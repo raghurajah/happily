@@ -1,0 +1,18 @@
+{
+  "kind": "question",
+  "id": "38548991-d993-4a64-9979-e1fbb7c9f8cc",
+  "question": "How does actual-vs-plan tracking work on the dashboard?",
+  "options": [
+    "Achieved percentile + re-forecast forward bands from actuals",
+    "Achieved percentile only",
+    "Simple actual-vs-median line overlay"
+  ],
+  "context": "Depends on 2949f831 (Scenario/Forecast/Plan model) and 5d2f9381 (snapshots from sync). User: current state is the achieved percentile within the Plan's Forecast bands, and from that point the app should re-simulate forward bands seeded with actual balances.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9e16f7e90b48d8a93068c934285eec51b8294203"
+  },
+  "created_at": "2026-06-11T15:09:52.603Z"
+}
