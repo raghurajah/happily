@@ -1,9 +1,8 @@
 /**
  * Seed a household member (decision c1c6e5f9: closed membership, created at setup;
- * no public signup). Re-running RESETS the member's password (so it doubles as a
- * password-reset for the closed membership). Run with:
+ * no public signup). Idempotent on email. Run with:
  *
- *   SEED_EMAIL=you@example.com SEED_PASSWORD='secret' SEED_NAME="You" pnpm db:seed
+ *   SEED_EMAIL=you@example.com SEED_PASSWORD=secret SEED_NAME="You" pnpm db:seed
  */
 import { config } from "dotenv";
 import { eq } from "drizzle-orm";
@@ -28,11 +27,7 @@ async function main() {
 
   const existing = await db.select().from(users).where(eq(users.email, email));
   if (existing.length > 0) {
-    await db
-      .update(users)
-      .set({ passwordHash: await hashPassword(password), name })
-      .where(eq(users.email, email));
-    console.log(`User ${email} already existed — password reset. You can now sign in.`);
+    console.log(`User ${email} already exists — nothing to do.`);
     return;
   }
 
