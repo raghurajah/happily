@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "eab9aa54-14b6-459b-8650-27bbff081aa5",
+  "question": "What concretely defines the single 'market factor' whose historical series we resample and to which each asset's beta is measured?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "3672aba86212ae80355ca5046c4fe669b335db59"
+  },
+  "created_at": "2026-06-23T16:19:32.697Z"
+}

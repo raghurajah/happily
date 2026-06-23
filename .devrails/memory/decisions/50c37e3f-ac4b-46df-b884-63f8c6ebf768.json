@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "50c37e3f-ac4b-46df-b884-63f8c6ebf768",
+  "question_id": "eab9aa54-14b6-459b-8650-27bbff081aa5",
+  "choice": "Use S&P 500 total return (monthly) as the single market factor.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Use a broad US total-equity-market total-return index (e.g., CRSP total market or S&P 500 total return) as the one market factor, with the longest clean monthly history we can source; betas and the bootstrap blocks are both computed/drawn from this series.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "eab9aa54-14b6-459b-8650-27bbff081aa5"
+    },
+    {
+      "type": "cites",
+      "target": "f7a7d3c1-99ea-413f-a986-a2a525e76c32"
+    },
+    {
+      "type": "cites",
+      "target": "2d6fd8a7-79eb-4cb8-b633-9029ac15667c"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "3672aba86212ae80355ca5046c4fe669b335db59"
+  },
+  "created_at": "2026-06-23T16:19:32.697Z"
+}
