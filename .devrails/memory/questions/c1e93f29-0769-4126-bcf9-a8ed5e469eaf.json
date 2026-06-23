@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "c1e93f29-0769-4126-bcf9-a8ed5e469eaf",
+  "question": "In what order are accounts drawn down to fund the spending shortfall, and how are RMDs handled?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "49f6cf959dcb693bad32ecdb7d749388bff88d6e"
+  },
+  "created_at": "2026-06-23T17:13:15.348Z"
+}

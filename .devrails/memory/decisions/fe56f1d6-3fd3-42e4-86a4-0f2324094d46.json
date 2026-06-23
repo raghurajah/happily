@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46",
+  "question_id": "c1e93f29-0769-4126-bcf9-a8ed5e469eaf",
+  "choice": "Tax-efficient default order: taxable first, then tax-deferred, then Roth/tax-free; force Required Minimum Distributions from tax-deferred accounts at the statutory age (73) even if not otherwise needed, with the excess reinvested into taxable. Make the order a per-Plan setting later.",
+  "rationale": "Sourcing order changes both taxes and longevity of the portfolio, so a defined default is required. Taxable-first is the conventional efficient default used by Root/BoldIn; RMDs are non-optional and force taxable events the spreadsheet may simplify. This depends on account tax-type existing in the domain model.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "c1e93f29-0769-4126-bcf9-a8ed5e469eaf"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "49f6cf959dcb693bad32ecdb7d749388bff88d6e"
+  },
+  "created_at": "2026-06-23T17:13:15.348Z"
+}
