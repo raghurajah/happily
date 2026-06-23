@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "7d4ef574-2d8f-42fd-8e26-f42ac811ae33",
+  "question_id": "a93a553c-70c5-4632-9a81-6cf5c9793a6b",
+  "choice": "Many-to-many (user can be in multiple households)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Model membership as many-to-many (a user can be in multiple households; a household can have many members), even though most real cases are one couple per household.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "a93a553c-70c5-4632-9a81-6cf5c9793a6b"
+    },
+    {
+      "type": "cites",
+      "target": "469676db-f96a-4ca2-a15b-705532527e97"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "ed65ea0897e964c76a59eee23a052ab0de55ef6f"
+  },
+  "created_at": "2026-06-23T19:27:06.451Z"
+}

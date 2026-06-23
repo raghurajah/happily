@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "a93a553c-70c5-4632-9a81-6cf5c9793a6b",
+  "question": "Can one user belong to more than one household, and can a household have more than two adults?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "ed65ea0897e964c76a59eee23a052ab0de55ef6f"
+  },
+  "created_at": "2026-06-23T19:27:06.451Z"
+}
