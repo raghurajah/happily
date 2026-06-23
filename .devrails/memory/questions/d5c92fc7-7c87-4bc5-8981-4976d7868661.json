@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "d5c92fc7-7c87-4bc5-8981-4976d7868661",
+  "question": "Should the engine apply an explicit investment cost drag (advisory fee + fund expense ratios) to returns each step, separate from taxes?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "ff4f1aa13a4b31dfd7d276a4de4717f5dbebe57a"
+  },
+  "created_at": "2026-06-23T19:07:02.525Z"
+}

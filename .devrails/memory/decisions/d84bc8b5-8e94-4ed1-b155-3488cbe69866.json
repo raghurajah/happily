@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "d84bc8b5-8e94-4ed1-b155-3488cbe69866",
+  "question_id": "d5c92fc7-7c87-4bc5-8981-4976d7868661",
+  "choice": "Yes — support a configurable annual cost drag applied as a per-step haircut to gross returns, defaulting to a single blended annual rate per Plan (e.g. 0.00–0.50%), not per-fund. Keep it as one knob in v1.",
+  "rationale": "Fees are a first-order driver of long-horizon outcomes — a steady ~1%/yr drag can shift probability-of-success by 10+ points over a 40-year horizon, so omitting it silently overstates success. ProjectionLab and BoldIn both model a fee/expense drag explicitly. This is distinct from the bracketed tax model (dc489f83) and the spending stream (fb2dfbc8): it reduces the return series itself. The spreadsheet's historical returns are gross of any advisory fee, so this is a deliberate fidelity delta — worth a single explicit rate rather than per-fund modeling, which is OUT for v1.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d5c92fc7-7c87-4bc5-8981-4976d7868661"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "ff4f1aa13a4b31dfd7d276a4de4717f5dbebe57a"
+  },
+  "created_at": "2026-06-23T19:07:02.525Z"
+}
