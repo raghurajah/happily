@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "6a1be9db-f8e4-4967-b778-3b62cb9f5086",
+  "question": "For configurable, per-person income streams (date-ranged with gaps, per-stream COLA mode, and a pre/post-tax + optional 401(k)-deferral treatment that ties them into accumulation and withdrawals), how faithfully do we implement Social Security — i.e. what does the user enter, and how is the benefit computed?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "435ce271c27d3f2d148bfb5077c446639a52fcc1"
+  },
+  "created_at": "2026-06-23T17:12:31.849Z"
+}
