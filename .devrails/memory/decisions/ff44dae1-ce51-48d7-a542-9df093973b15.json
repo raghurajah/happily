@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "ff44dae1-ce51-48d7-a542-9df093973b15",
+  "question_id": "8c30067b-a812-4bd9-b553-4014ec6966b2",
+  "choice": "Primary metric = probability of success, defined as the fraction of the 5,000 paths in which the household's investable portfolio is never depleted (balance stays > 0) through the last survivor's end-age. Alongside it, every run returns: (a) percentile net-worth bands over time (p10/p25/p50/p75/p90) at each monthly step, (b) a depletion-age distribution (histogram of when/if paths run dry), and (c) the terminal (bequest) net-worth distribution at end-age. These four outputs are the engine's contract to the rest of the app.",
+  "rationale": "Every downstream area — Scenarios/Active Plan comparison, Net-Worth-Actuals-vs-Plan tracking, and the forecast UX — consumes the engine's output shape, so it must be pinned before those areas are groomed; it's the highest-blast-radius open question left in this area now that the generative process is decided. 'Never depleted' (a hard ruin probability) is the convention ProjectionLab/BoldIn/Root all lead with and matches the spreadsheet's drawdown framing. Percentile bands + depletion-age + terminal distribution cover the three questions a household actually asks (Will I run out? When? What's left?) without committing to richer analytics (e.g., shortfall magnitude, spending-cut feedback) that can layer on later.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "8c30067b-a812-4bd9-b553-4014ec6966b2"
+    },
+    {
+      "type": "cites",
+      "target": "ae3a6a6a-65ad-4536-9e7f-25e69a9ab860"
+    },
+    {
+      "type": "cites",
+      "target": "fb2dfbc8-7068-46c8-9668-340a58fec169"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "62d0a858ace4852615e26e2397e14e44c151a73d"
+  },
+  "created_at": "2026-06-23T19:04:23.776Z"
+}

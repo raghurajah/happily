@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "8c30067b-a812-4bd9-b553-4014ec6966b2",
+  "question": "What is the engine's primary success metric, and what set of outputs does a run produce?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "62d0a858ace4852615e26e2397e14e44c151a73d"
+  },
+  "created_at": "2026-06-23T19:04:23.776Z"
+}
