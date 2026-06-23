@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "503319e8-11c7-46a7-af4d-0195f1165bd3",
+  "question_id": "2297c371-dedd-4bfd-be69-cdcbb350d01e",
+  "choice": "Flat membership for v1: every household member has full read/write on that household's people, assets, scenarios, and Plan, and can invite others. Defer view-only/granular roles.",
+  "rationale": "The objective explicitly grants invite rights to 'any household user,' signalling a trust-equal household model rather than a permissions hierarchy. A household is typically a couple or close family who already share these finances, so per-field or view-only roles add real complexity (UI gating, query filtering, audit) for a benefit v1 doesn't need. Keep the data shape able to carry a role enum later, but ship one role.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2297c371-dedd-4bfd-be69-cdcbb350d01e"
+    },
+    {
+      "type": "cites",
+      "target": "469676db-f96a-4ca2-a15b-705532527e97"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "d6d96ab517f2fbfc68231c0c790aebba06673f6f"
+  },
+  "created_at": "2026-06-23T19:27:37.000Z"
+}

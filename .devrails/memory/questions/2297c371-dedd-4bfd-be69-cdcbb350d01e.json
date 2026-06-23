@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "2297c371-dedd-4bfd-be69-cdcbb350d01e",
+  "question": "Do members within a household have differentiated permissions (e.g. view-only vs editor), or does every member have equal full access?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "d6d96ab517f2fbfc68231c0c790aebba06673f6f"
+  },
+  "created_at": "2026-06-23T19:27:37.000Z"
+}
