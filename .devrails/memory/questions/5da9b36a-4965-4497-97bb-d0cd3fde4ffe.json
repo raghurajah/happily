@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "5da9b36a-4965-4497-97bb-d0cd3fde4ffe",
+  "question": "What is the 'admin' — a per-user privilege flag, and how is the first admin created on a fresh deploy?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "e6d78d5d64ce8f583a1b7386d4bcec3ca597847b"
+  },
+  "created_at": "2026-06-23T20:04:21.473Z"
+}

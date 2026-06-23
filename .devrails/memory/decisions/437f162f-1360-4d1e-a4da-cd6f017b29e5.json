@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "437f162f-1360-4d1e-a4da-cd6f017b29e5",
+  "question_id": "5da9b36a-4965-4497-97bb-d0cd3fde4ffe",
+  "choice": "A boolean superadmin flag on the user record (distinct from household membership), seeded for your account via a deploy-time config/env value or a one-off seed script on first boot. The superadmin is the only one who can create households and provision the initial user; thereafter members self-serve invites.",
+  "rationale": "Since there's no public signup, the system must solve the chicken-and-egg of 'who creates the first account.' A config-seeded superadmin is the standard, auditable answer and keeps admin orthogonal to household membership (admin need not be a member of the households they create). Avoid a separate admin auth system — it's one flag plus a guarded route group.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "5da9b36a-4965-4497-97bb-d0cd3fde4ffe"
+    },
+    {
+      "type": "cites",
+      "target": "469676db-f96a-4ca2-a15b-705532527e97"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "e6d78d5d64ce8f583a1b7386d4bcec3ca597847b"
+  },
+  "created_at": "2026-06-23T20:04:21.473Z"
+}
