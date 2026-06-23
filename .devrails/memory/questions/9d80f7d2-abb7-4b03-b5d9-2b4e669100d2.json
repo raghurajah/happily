@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "9d80f7d2-abb7-4b03-b5d9-2b4e669100d2",
+  "question": "Where is cross-household data isolation enforced — application data-access layer or database row-level security?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "91b6816bcdd8655ea100c03869e48ba67c64f567"
+  },
+  "created_at": "2026-06-23T20:21:43.719Z"
+}
