@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "9145ef2a-8fb7-42fd-948a-53a8629cecc8",
+  "question": "How many simulation paths per forecast run, and what fixes the horizon end — a per-person life expectancy age, or a single household terminal age?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "30b9cbfdd25001637327de392f4d890c76a988f5"
+  },
+  "created_at": "2026-06-23T16:16:43.039Z"
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "ae3a6a6a-65ad-4536-9e7f-25e69a9ab860",
+  "question_id": "9145ef2a-8fb7-42fd-948a-53a8629cecc8",
+  "choice": "5,000 paths, per-person end-ages (household runs to last survivor)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: 5,000 paths default; horizon runs to each person's modeled end-age (default life expectancy ~95–105, per-person editable), with the household projection continuing until the last person's end-age.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9145ef2a-8fb7-42fd-948a-53a8629cecc8"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "30b9cbfdd25001637327de392f4d890c76a988f5"
+  },
+  "created_at": "2026-06-23T16:16:43.039Z"
+}
