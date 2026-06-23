@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "854bf13e-2344-47e2-9621-70250ae4f6ea",
+  "question": "How is the market factor's monthly return drawn each step — the distribution that the per-asset beta model scales off of?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "0340b8df665dc76c4e85202cb5108d084d0a26e5"
+  },
+  "created_at": "2026-06-23T15:59:20.761Z"
+}

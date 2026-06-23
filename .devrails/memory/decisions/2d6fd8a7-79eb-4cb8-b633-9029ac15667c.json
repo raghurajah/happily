@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "2d6fd8a7-79eb-4cb8-b633-9029ac15667c",
+  "question_id": "854bf13e-2344-47e2-9621-70250ae4f6ea",
+  "choice": "Start with block bootstrap from the historical factor series now; make the draw distribution configurable in the future to also support parametric (log-normal/Gaussian), fat-tailed Student-t, and full historical-sequence replay.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Block bootstrap from the historical market-factor series (resample contiguous multi-month blocks), not i.i.d. parametric draws.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "854bf13e-2344-47e2-9621-70250ae4f6ea"
+    },
+    {
+      "type": "cites",
+      "target": "f7a7d3c1-99ea-413f-a986-a2a525e76c32"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "0340b8df665dc76c4e85202cb5108d084d0a26e5"
+  },
+  "created_at": "2026-06-23T15:59:20.762Z"
+}
