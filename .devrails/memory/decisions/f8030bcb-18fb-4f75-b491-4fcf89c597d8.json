@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "f8030bcb-18fb-4f75-b491-4fcf89c597d8",
+  "question_id": "0aa67d67-a6db-4a83-b994-a45f7fb41122",
+  "choice": "Happily is a personal retirement planning and tracking web app for households. Its objective is to replace my existing retirement spreadsheet with a stronger Monte Carlo engine and to add the ongoing tracking the spreadsheet can't do: model the household's people, assets, income, and contributions; run probabilistic forecasts under named scenarios; mark one as the active Plan; and track actual net worth against that Plan over time, with balances entered manually, imported by CSV, or synced read-only from E*TRADE. It's a closed tool — no public signup. The admin can create households and assign a new (or existing) user to the household. Any household user could invite other users. The spreadsheet is the fidelity reference for the engine's math, but I intend specific deltas from it like tracking asset values on a daily basis (for equities), return distribution calculated using the stocks historic values / beta, etc. We'll capture as we groom, so treat it as ground-truth-with-overrides, not gospel. Review other products like ProjectionLab, RootFinancial and BoldIn, during the grooming to ask about specific capabilities those systems offer.",
+  "rationale": "Project objective — human-stated during grooming (corrected the inferred one).",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "0aa67d67-a6db-4a83-b994-a45f7fb41122"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "7e384affd5f02c521e0b28154641b3bd232f673f"
+  },
+  "created_at": "2026-06-23T01:15:00.774Z"
+}
