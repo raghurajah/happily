@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "4b3c8baf-a7c3-4e87-9152-51fd179b6ce8",
+  "question": "After applying beta×factor, do we add a per-asset idiosyncratic residual, and how is it generated?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "13dd4f25f0f33cb4e51a8a5de8b2e7f9d55b72fd"
+  },
+  "created_at": "2026-06-23T16:21:42.469Z"
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "62a1f0fb-cda2-4e45-8bad-1c2ee12070d8",
+  "question_id": "4b3c8baf-a7c3-4e87-9152-51fd179b6ce8",
+  "choice": "Joint block resample of factor + per-asset residuals (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Yes — for each asset, decompose its history into beta×factor + residual, and draw the residual from the SAME historical block index used for the factor that month (joint resampling). This preserves both the factor correlation across assets and each asset's own residual volatility/autocorrelation, with no distributional assumption. Assets lacking sufficient history fall back to an asset-class proxy's beta and residual.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "4b3c8baf-a7c3-4e87-9152-51fd179b6ce8"
+    },
+    {
+      "type": "cites",
+      "target": "f7a7d3c1-99ea-413f-a986-a2a525e76c32"
+    },
+    {
+      "type": "cites",
+      "target": "2d6fd8a7-79eb-4cb8-b633-9029ac15667c"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "13dd4f25f0f33cb4e51a8a5de8b2e7f9d55b72fd"
+  },
+  "created_at": "2026-06-23T16:21:42.469Z"
+}
