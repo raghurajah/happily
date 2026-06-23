@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "93d9c012-c9b6-4b1d-a1a7-62f1afb422f8",
+  "question_id": "3661f429-3022-4922-860f-798c12c4f937",
+  "choice": "Login magic-links expire in 15 minutes and are single-use; a successful login opens a ~30-day sliding session (renewed on activity) with an explicit logout, after which a fresh magic-link is required.",
+  "rationale": "The invite token deliberately has no expiry (it's a standing invitation that lives in the account), but a login link is a live credential and must be short-lived and single-use to limit the window for interception/replay. A 30-day sliding session is the usual comfort/security balance for a low-frequency personal-finance tool that no public attacker can even reach an account page for.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "3661f429-3022-4922-860f-798c12c4f937"
+    },
+    {
+      "type": "cites",
+      "target": "216d78f9-7b39-4193-9ab1-0c386009c2f9"
+    },
+    {
+      "type": "cites",
+      "target": "27b9a5ad-8c88-4ead-903f-755f9f190c79"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "dd5480ac1e5e951c6ee736178873de8c2f2a3e4d"
+  },
+  "created_at": "2026-06-23T20:16:42.033Z"
+}

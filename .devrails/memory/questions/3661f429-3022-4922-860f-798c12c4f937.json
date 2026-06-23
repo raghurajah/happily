@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "3661f429-3022-4922-860f-798c12c4f937",
+  "question": "What are the lifetimes for the login magic-link token and the resulting authenticated session?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "dd5480ac1e5e951c6ee736178873de8c2f2a3e4d"
+  },
+  "created_at": "2026-06-23T20:16:42.033Z"
+}
