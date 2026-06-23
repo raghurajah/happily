@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "49be9242-3ed6-4729-8b5a-9dd632ffe4da",
+  "question": "Should a run be deterministic given identical inputs (seeded RNG so the same Plan reproduces the same bands), or draw fresh randomness each run?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "6463343f87cf203fae8da612ec44dae7bcf9c9eb"
+  },
+  "created_at": "2026-06-23T19:08:37.678Z"
+}
