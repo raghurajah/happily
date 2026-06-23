@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "e0aff0bb-5c21-495e-ad52-25b0b14181fe",
+  "question_id": "53636049-97fa-4d34-99d1-e11c3a0e953c",
+  "choice": "Session active-household + switcher, defaulting to last-used; if no last-used household exists, list all the households the user is associated with for them to choose.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Keep a per-user 'active household' as session state, defaulting to the only membership (or last-used when there are several), with an in-app switcher; every data request resolves against that active household. Single-household users (the common case) never see a chooser.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "53636049-97fa-4d34-99d1-e11c3a0e953c"
+    },
+    {
+      "type": "cites",
+      "target": "7d4ef574-2d8f-42fd-8e26-f42ac811ae33"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "89f21e6732ecbaed542e9bd803277c1ebed443a9"
+  },
+  "created_at": "2026-06-23T20:18:58.832Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "53636049-97fa-4d34-99d1-e11c3a0e953c",
+  "question": "Since a user can belong to multiple households, how is the 'current household' determined for a request and the UI?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "89f21e6732ecbaed542e9bd803277c1ebed443a9"
+  },
+  "created_at": "2026-06-23T20:18:58.832Z"
+}
