@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "348c080a-bd62-40d3-8ba5-fe2a3816d7c7",
+  "question": "How do users authenticate into Happily?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "1978f57da9e22cac11c9d3d029a1a222fef759bb"
+  },
+  "created_at": "2026-06-23T19:10:53.860Z"
+}
