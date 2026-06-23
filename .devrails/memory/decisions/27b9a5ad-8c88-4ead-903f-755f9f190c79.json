@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "27b9a5ad-8c88-4ead-903f-755f9f190c79",
+  "question_id": "ad536eec-fbdc-4ecd-8b93-ad8112df0039",
+  "choice": "Signed single-use email invite tokens (no expiry). Invitations sit inside the invited user's account and can be accepted anytime. Any household member can revoke an invitation, remove another member, or leave the household. When the last member leaves, the system prompts to delete the household.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Signed, single-use email invite tokens scoped to (household, invited-email, role), expiring in ~7 days. Accepting creates the account (or, if the email already has an account, just adds the membership) and binds it to the household. Pending invites are listable/revocable by any member.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "ad536eec-fbdc-4ecd-8b93-ad8112df0039"
+    },
+    {
+      "type": "cites",
+      "target": "469676db-f96a-4ca2-a15b-705532527e97"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "ac618b3a6a947ef8565bdd48ff12e5b902bae484"
+  },
+  "created_at": "2026-06-23T20:10:49.773Z"
+}

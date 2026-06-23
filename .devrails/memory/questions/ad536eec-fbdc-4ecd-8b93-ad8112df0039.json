@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "ad536eec-fbdc-4ecd-8b93-ad8112df0039",
+  "question": "What are the mechanics of a household member inviting another user — token, delivery, expiry, and new-vs-existing-user handling?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "ac618b3a6a947ef8565bdd48ff12e5b902bae484"
+  },
+  "created_at": "2026-06-23T20:10:49.773Z"
+}
