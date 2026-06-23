@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "bebc6467-875d-4534-9af6-590275677706",
+  "question": "At what time resolution does the forward Monte Carlo simulate — annual steps (as the spreadsheet does, age 50→105), or sub-annual/daily?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9095c46920e782fc3a2e3895958dd9ede2d0bf74"
+  },
+  "created_at": "2026-06-23T01:33:59.057Z"
+}

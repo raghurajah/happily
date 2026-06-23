@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "90061ce7-89d5-4741-8234-dd8dfb195ef2",
+  "question_id": "bebc6467-875d-4534-9af6-590275677706",
+  "choice": "Monthly steps",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Simulate the forecast in annual steps; keep daily granularity only for actuals/valuation tracking, not the forward projection.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "bebc6467-875d-4534-9af6-590275677706"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9095c46920e782fc3a2e3895958dd9ede2d0bf74"
+  },
+  "created_at": "2026-06-23T01:33:59.057Z"
+}
