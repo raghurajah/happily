@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "fe17d0a2-79ed-43fc-b258-346aea14c0af",
+  "question_id": "3fd85af8-6911-4b82-9111-5371cf4e5699",
+  "choice": "Stochastic, jointly block-resampled with returns (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Model inflation stochastically by drawing it from the SAME historical block month as the market factor (joint resample of returns + CPI), so real-return/inflation correlation is preserved — a deliberate delta from the spreadsheet's fixed inflation assumption. Keep a configurable fixed-inflation override for users who want a deterministic real-terms view.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "3fd85af8-6911-4b82-9111-5371cf4e5699"
+    },
+    {
+      "type": "cites",
+      "target": "2d6fd8a7-79eb-4cb8-b633-9029ac15667c"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "810df89b2587c8a4c254a051985a4b9b2586654a"
+  },
+  "created_at": "2026-06-23T16:22:31.833Z"
+}

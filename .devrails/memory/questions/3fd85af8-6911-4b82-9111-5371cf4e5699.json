@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "3fd85af8-6911-4b82-9111-5371cf4e5699",
+  "question": "Is inflation stochastic in the engine, and is it correlated with returns?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "810df89b2587c8a4c254a051985a4b9b2586654a"
+  },
+  "created_at": "2026-06-23T16:22:31.833Z"
+}
