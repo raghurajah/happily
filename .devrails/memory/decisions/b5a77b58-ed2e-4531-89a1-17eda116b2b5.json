@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "b5a77b58-ed2e-4531-89a1-17eda116b2b5",
+  "question_id": "c0acad67-b006-4a16-98d7-f34318364237",
+  "choice": "(a) Deferrals come off the top: `income − deferral` is the pool the expense-absorption rule then operates on. Deferrals land in tax-deferred and are invested at the Plan's target allocation at contribution; per your 'returns reinvested in-asset' rule there is no subsequent rebalancing, so drift is allowed. (b) Reinvest the RMD overage into the *same asset withdrawn from*, preserving your buy-and-hold/no-rebalance philosophy and avoiding an injected S&P assumption; fall back to S&P 500 only when the withdrawal was pro-rata across multiple sleeves and there's no single source asset.",
+  "rationale": "Your 'returns reinvested in that asset' rule already settles rebalancing policy, so the only undecided piece for deferrals is the entry weighting — target allocation at contribution is the one choice consistent with both the contribution spec and the no-rebalance rule. Taking deferrals off the top keeps them from being double-counted against the expense-absorption pool and preserves the tax-deferred/taxable split that RMDs and withdrawal order depend on. For the RMD overage, 'same asset withdrawn from' is the allocation-neutral default under buy-and-hold; S&P 500 is simpler but silently imposes an equity tilt on the new taxable account, so it's better as an explicit fallback than the primary rule.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "c0acad67-b006-4a16-98d7-f34318364237"
+    },
+    {
+      "type": "cites",
+      "target": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46"
+    },
+    {
+      "type": "cites",
+      "target": "f7a7d3c1-99ea-413f-a986-a2a525e76c32"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9a0fb3c0a4e494f429e6a8c085cf04e1fd77ca56"
+  },
+  "created_at": "2026-06-23T19:02:51.219Z"
+}

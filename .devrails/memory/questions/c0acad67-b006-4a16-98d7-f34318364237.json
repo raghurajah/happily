@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "c0acad67-b006-4a16-98d7-f34318364237",
+  "question": "Two entry rules remain to confirm. (a) Pre-tax deferrals: are they taken off the top of income (before the expense-absorption rule), landing in tax-deferred accounts and invested at the Plan's target allocation at the moment of contribution — buy-and-hold thereafter, consistent with your no-rebalance rule? (b) For RMD-forced withdrawals exceeding expenses, the overage routes to the taxable account — but reinvested into *which* asset: the same/similar asset withdrawn from, or S&P 500?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9a0fb3c0a4e494f429e6a8c085cf04e1fd77ca56"
+  },
+  "created_at": "2026-06-23T19:02:51.219Z"
+}
