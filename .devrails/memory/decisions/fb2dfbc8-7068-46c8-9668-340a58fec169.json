@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "fb2dfbc8-7068-46c8-9668-340a58fec169",
+  "question_id": "2e012299-bddf-49f0-91e1-a3ce1093a505",
+  "choice": "Carry the spreadsheet's annual real spending schedule as the baseline (inflation-adjusted each month via the stochastic CPI we already draw), expressed as a real-dollar target. Support a single spending stream for v1, with the data shape allowing phased spending (go-go/slow-go/no-go) and discretionary-vs-essential splits to be layered on later.",
+  "rationale": "Spending demand is the dominant driver of depletion risk, so it must be explicit. The spreadsheet already encodes a real spending path; reusing it keeps fidelity, and tying it to the stochastic inflation block (fe17d0a2) keeps real-terms spending coherent with returns. Phases are a known ProjectionLab/BoldIn capability but add scope — defer the modeling, keep the data shape open.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2e012299-bddf-49f0-91e1-a3ce1093a505"
+    },
+    {
+      "type": "cites",
+      "target": "fe17d0a2-79ed-43fc-b258-346aea14c0af"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "4b3036a904b69a18a0fa4d85aff6b47cb43e644e"
+  },
+  "created_at": "2026-06-23T16:25:00.228Z"
+}

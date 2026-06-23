@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "2e012299-bddf-49f0-91e1-a3ce1093a505",
+  "question": "How is the household's spending need defined per step in the projection?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "4b3036a904b69a18a0fa4d85aff6b47cb43e644e"
+  },
+  "created_at": "2026-06-23T16:25:00.228Z"
+}
