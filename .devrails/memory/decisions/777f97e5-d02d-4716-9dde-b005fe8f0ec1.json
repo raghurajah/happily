@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "777f97e5-d02d-4716-9dde-b005fe8f0ec1",
+  "question_id": "6820c33d-360a-4e83-9474-5e54f3940e8d",
+  "choice": "Resolve by source precedence, not wall-clock ingestion order: E*TRADE sync (authoritative position from custodian) > CSV import > manual entry, with most-recent as-of date breaking ties within the same source tier. Keep every row (provenance preserved); precedence only governs which row is treated as 'current'. Flag a conflict in the UI only when a manual entry is being overridden by a later sync, so a deliberate manual correction isn't silently clobbered.",
+  "rationale": "59576be9 stamped source precisely so it could drive conflict resolution, but left the rule unpinned. Ingestion-time-wins is fragile — a backfilled CSV or a delayed manual edit could overwrite a fresh authoritative sync. A custodian sync is the most trustworthy quantity for a real holding, so it should win by default; manual is the human escape hatch and should never be destroyed, only superseded-with-visibility.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "6820c33d-360a-4e83-9474-5e54f3940e8d"
+    },
+    {
+      "type": "cites",
+      "target": "59576be9-af36-4bfa-a917-334538ac7dce"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "0e6f2d9b19f07df8cd7c0e4ea8de3f4f4eb4a70f"
+  },
+  "created_at": "2026-06-24T17:53:51.632Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "6820c33d-360a-4e83-9474-5e54f3940e8d",
+  "question": "The observation log is keyed by (holding, as-of date, source), latest row = current state (59576be9). When two channels report the SAME holding for the SAME (or overlapping) as-of date with different values, what resolves 'current state'? Pure most-recently-ingested-wins, or a source-precedence ordering, or surface the conflict for the user?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "0e6f2d9b19f07df8cd7c0e4ea8de3f4f4eb4a70f"
+  },
+  "created_at": "2026-06-24T17:53:51.632Z"
+}
