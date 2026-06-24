@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "849c5a9a-8ad3-4a23-a38f-cbefd6efa69e",
+  "question": "Does a CSV carry a per-row account-identifier column (so one file updates many Accounts), or is each import directed into a single user-chosen Account?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "1a204d80fd42e9cf456f4193147c82f309ceb8e1"
+  },
+  "created_at": "2026-06-24T18:50:42.169Z"
+}
