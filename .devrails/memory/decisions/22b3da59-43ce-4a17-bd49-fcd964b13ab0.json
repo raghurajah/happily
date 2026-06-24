@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "22b3da59-43ce-4a17-bd49-fcd964b13ab0",
+  "question_id": "9baeadd1-7684-48c8-aaf7-c529f1b95121",
+  "choice": "FinancialAccount for the container; Person/User for identity (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Name the financial container `FinancialAccount` and reserve `Person` (or `User`) for identity. End-user UI can still say 'Account' where it reads naturally; the disambiguation only needs to hold in the domain model and code.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9baeadd1-7684-48c8-aaf7-c529f1b95121"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "85cc5d22eccccce4367d995665e0bf0cb0fa3c7c"
+  },
+  "created_at": "2026-06-24T02:15:11.449Z"
+}
