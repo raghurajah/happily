@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "aae59557-715e-4adc-b751-4733bc162d63",
+  "question_id": "10bd2b2c-4bdb-4395-a626-712ce4683c62",
+  "choice": "Return the same neutral response in all cases ('If that address has an account, we've sent a link') and only actually send mail when an account/stub exists — never reveal whether an account exists. Rate-limit link requests per email and per IP.",
+  "rationale": "Because there's no public signup, the mere existence of an account is itself sensitive; a differential response (or a visible error) lets an outsider enumerate who's a user. Uniform responses + rate limiting are the standard non-enumeration auth edge. This rides on the magic-link-only (216d78f9) and login-token (93d9c012) decisions without changing them.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "10bd2b2c-4bdb-4395-a626-712ce4683c62"
+    },
+    {
+      "type": "cites",
+      "target": "216d78f9-7b39-4193-9ab1-0c386009c2f9"
+    },
+    {
+      "type": "cites",
+      "target": "93d9c012-c9b6-4b1d-a1a7-62f1afb422f8"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "82056373e10ba3e515baa0be270a3d671a07edb1"
+  },
+  "created_at": "2026-06-24T02:00:35.804Z"
+}
