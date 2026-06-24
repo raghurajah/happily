@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "2aadf3bc-e841-4b0f-a9f9-216dc4f67591",
+  "question_id": "96e16784-cc08-4a90-95fe-23af9768b87c",
+  "choice": "Generic column-mapper with saved, reusable mappings per named source (e.g. 'Fidelity export', 'my bank'). A row maps to a position against an Account: identifier (ticker), quantity, OR a dollar balance, plus an as-of date — exactly the 9b7cc94d shape. If a ticker column is mapped, treat the row as a marketable holding (quantity → valued by market price); if only a dollar column is mapped, treat it as a proxy/fixed dollar balance. Unmapped/unknown Accounts prompt the same map-or-create step as the E*TRADE first-connect flow (7b0325f6). Preview the parsed rows before commit; on import each row becomes a CSV-tier observation under the precedence rule (777f97e5).",
+  "rationale": "A fixed template forces the user to reshape every brokerage/bank export by hand — the exact friction the spreadsheet already imposes. A column-mapper with remembered mappings makes repeat imports one click and covers heterogeneous sources without us hard-coding each vendor's format. Keying rows to the quantity-vs-dollar representation (9b7cc94d) keeps CSV and E*TRADE producing the same Holding shape, and reusing the Account map-or-create + precedence machinery means CSV adds an input adapter, not a new data path.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "96e16784-cc08-4a90-95fe-23af9768b87c"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    },
+    {
+      "type": "cites",
+      "target": "7b0325f6-be57-4735-adec-724def33e499"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9bb147d84806151a70ea9e44706787ead4c94828"
+  },
+  "created_at": "2026-06-24T18:09:15.148Z"
+}

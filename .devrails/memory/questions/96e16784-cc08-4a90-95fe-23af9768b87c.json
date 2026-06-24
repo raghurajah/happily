@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "96e16784-cc08-4a90-95fe-23af9768b87c",
+  "question": "How should CSV import work — a fixed template the user must conform to, or a generic column-mapper where they map their file's columns to our fields and we remember the mapping per source?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9bb147d84806151a70ea9e44706787ead4c94828"
+  },
+  "created_at": "2026-06-24T18:09:15.148Z"
+}
