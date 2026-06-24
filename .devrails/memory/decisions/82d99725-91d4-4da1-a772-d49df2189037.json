@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "82d99725-91d4-4da1-a772-d49df2189037",
+  "question_id": "3ab48740-3b39-4d2c-bad9-c307f696c2ea",
+  "choice": "v1: let the user enter the total annual tax-deferred contribution (employee deferral + employer match as one figure), keeping the data shape able to carry a match formula {match rate, cap % of salary} later. A match is just additional dollars into the same tax-deferred bucket at v1 fidelity — no distinct tax treatment — so a separate formula adds input burden without changing engine math.",
+  "rationale": "b5a77b58 already routes deferrals into tax-deferred at target allocation; an employer match lands in the same bucket with the same treatment, so at v1's bracketed-net fidelity it's indistinguishable from a larger deferral. A formula matters for what-if precision but is deferrable; carrying the field keeps the door open. ProjectionLab/BoldIn expose a match formula — worth noting as a known later capability, not v1 default.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "3ab48740-3b39-4d2c-bad9-c307f696c2ea"
+    },
+    {
+      "type": "cites",
+      "target": "b5a77b58-ed2e-4531-89a1-17eda116b2b5"
+    },
+    {
+      "type": "cites",
+      "target": "d424a37f-fa36-4e53-b368-cbe058e0e596"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "2ddb41dba390345ff818155e1990bd8ee05f2cef"
+  },
+  "created_at": "2026-06-24T03:00:44.102Z"
+}

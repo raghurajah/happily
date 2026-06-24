@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "3ab48740-3b39-4d2c-bad9-c307f696c2ea",
+  "question": "Do we model an employer 401(k) match explicitly (e.g. match % of salary up to a cap), or fold it into a single user-entered total contribution number for v1?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "2ddb41dba390345ff818155e1990bd8ee05f2cef"
+  },
+  "created_at": "2026-06-24T03:00:44.102Z"
+}
