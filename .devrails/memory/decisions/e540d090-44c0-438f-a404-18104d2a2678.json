@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "e540d090-44c0-438f-a404-18104d2a2678",
+  "question_id": "15a7278f-3f10-41f8-a780-6d3e01ebdd44",
+  "choice": "Encrypt the token + token-secret at rest (app-level envelope encryption with a key outside the database, e.g. a KMS/secret-store key), scoped to the household partition (c49e8550), and never expose them to the client. Since they die daily anyway, on logout/disconnect just drop them and require a fresh handshake; no long-lived secret accumulates. Treat 'Reconnect E*TRADE' (b45b7691) as the universal recovery path for any missing/invalid token.",
+  "rationale": "These are read-only but still brokerage-account credentials, so plaintext-at-rest is an unacceptable blast radius in a multi-household DB even with row-level isolation. Their built-in daily expiry actually limits exposure, so the main job is encryption-at-rest + household scoping rather than elaborate rotation. This rides on existing isolation (c49e8550) and the reconnect prompt (b45b7691) without new machinery.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "15a7278f-3f10-41f8-a780-6d3e01ebdd44"
+    },
+    {
+      "type": "cites",
+      "target": "c49e8550-dd3f-4350-9de0-ab0234a2a831"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "2a410bdd6fe2aa536ebd636a86734934eabca643"
+  },
+  "created_at": "2026-06-24T19:44:56.416Z"
+}

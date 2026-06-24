@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "15a7278f-3f10-41f8-a780-6d3e01ebdd44",
+  "question": "How are the E*TRADE OAuth tokens (access token + secret) stored at rest, given they're a live credential to a real brokerage account?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "2a410bdd6fe2aa536ebd636a86734934eabca643"
+  },
+  "created_at": "2026-06-24T19:44:56.416Z"
+}
