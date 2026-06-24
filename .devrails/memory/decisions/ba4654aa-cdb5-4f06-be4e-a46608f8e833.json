@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "ba4654aa-cdb5-4f06-be4e-a46608f8e833",
+  "question_id": "41029199-4c91-4e31-9c30-6bdb624ca627",
+  "choice": "Manual entry is per-Holding and matches the storage model: for a marketable security (kind a) the user enters a SHARE QUANTITY (we value it at the latest price), for an asset-class proxy (b) or non-market fixed/cash (c) they enter a DOLLAR BALANCE; every manual entry carries an as-of date defaulting to today. Do NOT allow a free-floating 'account total' with no holdings — an Account's value is always the sum of its Holdings' valuations. Allow a quick 'cash' Holding (kind c) as the escape hatch for a balance the user doesn't want to break out.",
+  "rationale": "9b7cc94d already fixes that marketable holdings are quantity×price and proxies/cash are dollar balances; manual entry must produce exactly those shapes or it can't feed daily valuation or reconcile with a later E*TRADE sync of the same Account. An account-level total with no holdings would be un-valuable daily and un-mappable to a synced position, breaking precedence (777f97e5). The cash-Holding escape hatch keeps it low-friction for accounts the user tracks only as a lump sum.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "41029199-4c91-4e31-9c30-6bdb624ca627"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    },
+    {
+      "type": "cites",
+      "target": "af999d56-8732-4834-9b13-a05c048bdc76"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "597d7d79b9ad1965c8feb07bf5c0f2039b2570d5"
+  },
+  "created_at": "2026-06-24T18:17:47.264Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "41029199-4c91-4e31-9c30-6bdb624ca627",
+  "question": "For MANUAL entry, what does the user actually type per holding — and can they enter an account-level total without a per-holding breakdown?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "597d7d79b9ad1965c8feb07bf5c0f2039b2570d5"
+  },
+  "created_at": "2026-06-24T18:17:47.264Z"
+}
