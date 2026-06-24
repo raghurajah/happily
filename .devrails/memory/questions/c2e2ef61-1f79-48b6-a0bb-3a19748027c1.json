@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "c2e2ef61-1f79-48b6-a0bb-3a19748027c1",
+  "question": "What does a sync actually pull and write per mapped account — positions, cash, or both — and how does it reconcile against existing Holdings?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "250b0c027cf2dca5bfa959dae854eeff59f2565c"
+  },
+  "created_at": "2026-06-24T19:17:36.065Z"
+}

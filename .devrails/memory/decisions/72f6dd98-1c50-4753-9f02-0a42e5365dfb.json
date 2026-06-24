@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "72f6dd98-1c50-4753-9f02-0a42e5365dfb",
+  "question_id": "c2e2ef61-1f79-48b6-a0bb-3a19748027c1",
+  "choice": "Pull BOTH endpoints per account: /portfolio for positions (Symbol + Quantity → upsert each as a kind-a marketable Holding by ticker, storing quantity, not market value) and /accounts/{id}/balances for the cash-account balance (→ a single kind-c cash Holding). Reconcile by ticker within the mapped Account: existing ticker → new observation row at sync as-of date; unseen ticker → auto-create the Holding (it's authoritative position data); a previously-synced ticker now absent → mark that Holding's position closed (zero quantity) rather than deleting, preserving the keep-every-row guarantee (777f97e5).",
+  "rationale": "Storing share quantity (not E*TRADE's market value) is required by 9b7cc94d — we revalue daily off our own market-data series, so importing their dollar figure would diverge from manual/CSV holdings of the same ticker. Splitting positions (kind-a) from cash (kind-c) mirrors exactly the storage shapes ba4654aa already fixed for manual entry, so all three ingestion paths converge on one Holding model. Auto-creating unseen tickers is safe because position data is unambiguous (unlike the tax-bucket inference 7b0325f6 deliberately kept manual).",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "c2e2ef61-1f79-48b6-a0bb-3a19748027c1"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    },
+    {
+      "type": "cites",
+      "target": "ba4654aa-cdb5-4f06-be4e-a46608f8e833"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "250b0c027cf2dca5bfa959dae854eeff59f2565c"
+  },
+  "created_at": "2026-06-24T19:17:36.065Z"
+}
