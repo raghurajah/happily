@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "66de0273-51d8-4f21-91a3-af285906ef11",
+  "question_id": "2c7e2739-f841-42d8-a90d-c8847e4842ac",
+  "choice": "Prefer a per-row as-of date when the file's column-map supplies one; otherwise fall back to a single import-level as-of date the user picks (defaulting to today, like manual entry in ba4654aa). Stamp every committed row with source=CSV so precedence (777f97e5) can rank it between sync and manual.",
+  "rationale": "Per-row dates let a historical/backfill export load balances at their true observation times, which actuals-vs-Plan tracking needs to plot a correct history rather than collapsing everything onto upload day. But many quick exports have no usable date column, so an explicit import-level fallback keeps it low-friction. Both paths must record source=CSV explicitly because the precedence rule keys conflict resolution on source tier plus most-recent as-of date.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2c7e2739-f841-42d8-a90d-c8847e4842ac"
+    },
+    {
+      "type": "cites",
+      "target": "ba4654aa-cdb5-4f06-be4e-a46608f8e833"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "1737decab49e5ce8f00353f81e13924e2bb8abd9"
+  },
+  "created_at": "2026-06-24T18:42:06.993Z"
+}

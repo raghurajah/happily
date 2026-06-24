@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "2c7e2739-f841-42d8-a90d-c8847e4842ac",
+  "question": "Where does each imported row's as-of date come from — a date column in the file, or a single import-level date the user sets for the whole upload?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "1737decab49e5ce8f00353f81e13924e2bb8abd9"
+  },
+  "created_at": "2026-06-24T18:42:06.993Z"
+}
