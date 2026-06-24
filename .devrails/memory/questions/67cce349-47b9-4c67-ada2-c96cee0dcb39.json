@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "67cce349-47b9-4c67-ada2-c96cee0dcb39",
+  "question": "Roth contributions are reachable by neither leg of the current accumulation model — deferrals route only to tax-deferred (b5a77b58), and surplus (above) would route only to taxable. Do we support an explicit annual Roth contribution input in v1?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "64a27b930bc9dcc782428a7d518c9e339afd18f2"
+  },
+  "created_at": "2026-06-24T03:10:52.362Z"
+}

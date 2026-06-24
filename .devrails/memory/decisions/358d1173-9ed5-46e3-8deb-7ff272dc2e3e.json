@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "358d1173-9ed5-46e3-8deb-7ff272dc2e3e",
+  "question_id": "67cce349-47b9-4c67-ada2-c96cee0dcb39",
+  "choice": "Yes — optional explicit annual Roth contribution per person, post-tax, into the tax-free bucket (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Yes — carry one optional explicit annual Roth contribution amount per person, taken from post-tax income (after deferral and tax, before the surplus calc) and deposited into the tax-free bucket (d424a37f) at target allocation. Keep it a flat user-entered dollar/percent figure; do NOT model Roth income limits, backdoor conversions, or the contribution cap in v1 (consistent with dc489f83's bracketed-net fidelity cap).)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "67cce349-47b9-4c67-ada2-c96cee0dcb39"
+    },
+    {
+      "type": "cites",
+      "target": "d424a37f-fa36-4e53-b368-cbe058e0e596"
+    },
+    {
+      "type": "cites",
+      "target": "b5a77b58-ed2e-4531-89a1-17eda116b2b5"
+    },
+    {
+      "type": "cites",
+      "target": "dc489f83-3c07-4eca-bbec-08fb81c77ca7"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "64a27b930bc9dcc782428a7d518c9e339afd18f2"
+  },
+  "created_at": "2026-06-24T03:10:52.362Z"
+}
