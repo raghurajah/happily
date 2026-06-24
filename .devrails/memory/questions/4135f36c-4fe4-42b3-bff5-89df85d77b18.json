@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "4135f36c-4fe4-42b3-bff5-89df85d77b18",
+  "question": "What drives an E*TRADE sync — an on-demand 'Sync now' button (user kicks off an OAuth-authorized pull in the foreground) or a scheduled background job that stores long-lived credentials and polls automatically (e.g. nightly)?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "317ed2bfd167b0bb4dd136f3ed9969e5deb9cf5a"
+  },
+  "created_at": "2026-06-24T17:57:24.224Z"
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "2ae00f66-a385-4129-883b-8b00d1f467b3",
+  "question_id": "4135f36c-4fe4-42b3-bff5-89df85d77b18",
+  "choice": "On-demand foreground sync only (recommended)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: On-demand, user-triggered sync in v1 (a 'Sync now' / 'Reconnect E*TRADE' button), not background polling.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "4135f36c-4fe4-42b3-bff5-89df85d77b18"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "317ed2bfd167b0bb4dd136f3ed9969e5deb9cf5a"
+  },
+  "created_at": "2026-06-24T17:57:24.224Z"
+}
