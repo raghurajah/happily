@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "abb4ee7b-0f86-4dd4-b0d8-c4aa799979d7",
+  "question": "When a sync fails or returns partially — token expired/needs re-auth, E*TRADE API down, or only some accounts return — what is the behavior?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "9b522c247f6222ad4f50df5d760ee277a935f296"
+  },
+  "created_at": "2026-06-24T17:59:10.932Z"
+}

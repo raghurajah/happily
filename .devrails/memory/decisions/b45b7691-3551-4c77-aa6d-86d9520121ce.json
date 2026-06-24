@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "b45b7691-3551-4c77-aa6d-86d9520121ce",
+  "question_id": "abb4ee7b-0f86-4dd4-b0d8-c4aa799979d7",
+  "choice": "Treat sync as atomic-per-account and non-destructive: an expired/invalid token surfaces a 'Reconnect E*TRADE' prompt and changes nothing; an API/timeout error leaves all prior observations untouched and shows the last-successful-sync timestamp; a partial return commits only the accounts that succeeded and flags the rest as stale. Never let a failed sync zero out or overwrite existing balances.",
+  "rationale": "Because precedence (777f97e5) makes sync the authoritative tier, a half-applied or empty sync response could wrongly supersede good manual/CSV data or zero real holdings. Failing closed (commit nothing on error, commit per-account on partial success) preserves the keep-every-row guarantee and keeps net-worth actuals trustworthy. Showing last-successful-sync age tells the user when the authoritative number is stale so they can fall back to manual.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "abb4ee7b-0f86-4dd4-b0d8-c4aa799979d7"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "9b522c247f6222ad4f50df5d760ee277a935f296"
+  },
+  "created_at": "2026-06-24T17:59:10.932Z"
+}
