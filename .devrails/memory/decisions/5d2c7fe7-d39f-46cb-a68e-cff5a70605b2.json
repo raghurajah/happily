@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "5d2c7fe7-d39f-46cb-a68e-cff5a70605b2",
+  "question_id": "0ced1355-9526-4cb1-a886-fa08e08d2d35",
+  "choice": "Commit every valid row and return a per-row report of what was rejected and why (unparseable value, unknown identifier, unresolved account), letting the user fix and re-upload only the failures. Treat the import as additive and non-destructive — it only adds observations, never zeroes or deletes existing ones.",
+  "rationale": "This matches the fail-closed, never-destroy posture already set for sync (b45b7691) and the keep-every-row guarantee (777f97e5): a CSV import is just another observation source, so a few bad rows shouldn't block good data, and no import should ever clobber existing balances. A clear rejection report is the import analogue of sync's stale/last-success surfacing.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "0ced1355-9526-4cb1-a886-fa08e08d2d35"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "d127218953710c4d707eb28ace6a2411806677ce"
+  },
+  "created_at": "2026-06-24T18:20:45.086Z"
+}
