@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "af999d56-8732-4834-9b13-a05c048bdc76",
+  "question_id": "9f42ce0a-bf3e-44ef-8d21-3431f491f3bf",
+  "choice": "Give each Security/Holding a **kind**: (a) *marketable security* — has a ticker, uses its own historic series + beta; (b) *asset-class proxy* — no ticker, uses a class series + class beta (the fallback already named for thin-history assets); (c) *non-market fixed* — cash/stable-value, beta≈0, modeled at a configured nominal or inflation-linked rate. Real estate and pensions/annuities: model real estate as an asset-class-proxy (or held-flat) line in net worth but confirm it is **not drawn down** by the withdrawal engine in v1, and treat a defined-benefit pension/annuity as an **income stream** (generic stream with COLA enum), not a Holding.",
+  "rationale": "The beta-to-S&P generative process is undefined for a checking account or a house, and decision 62a1f0fb already established an asset-class-proxy fallback for assets lacking history — generalizing that into an explicit Holding 'kind' keeps the engine total-coverage without special cases. Routing pensions/annuities to the existing income-stream machinery (701e81b4) avoids inventing a second cashflow path. Real estate as a non-depleting net-worth line keeps it visible in actuals-vs-Plan without forcing illiquid-asset sale logic, which is heavier than v1 needs.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9f42ce0a-bf3e-44ef-8d21-3431f491f3bf"
+    },
+    {
+      "type": "cites",
+      "target": "62a1f0fb-cda2-4e45-8bad-1c2ee12070d8"
+    },
+    {
+      "type": "cites",
+      "target": "701e81b4-9cbb-40af-ac04-c5ffcc2eee2b"
+    },
+    {
+      "type": "cites",
+      "target": "50c37e3f-ac4b-46df-b884-63f8c6ebf768"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "21e8d6ce771a0126f2566b4b6c01210498d8de9b"
+  },
+  "created_at": "2026-06-24T02:07:26.884Z"
+}

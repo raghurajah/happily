@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "9f42ce0a-bf3e-44ef-8d21-3431f491f3bf",
+  "question": "How do we model holdings that aren't individual tickers — cash, bonds/stable value, real estate, pensions/annuities — given the engine generates returns from a security's own historic series and beta to the S&P factor?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "21e8d6ce771a0126f2566b4b6c01210498d8de9b"
+  },
+  "created_at": "2026-06-24T02:07:26.884Z"
+}
