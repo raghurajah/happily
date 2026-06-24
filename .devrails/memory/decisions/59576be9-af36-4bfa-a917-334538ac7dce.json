@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "59576be9-af36-4bfa-a917-334538ac7dce",
+  "question_id": "eafd101c-5d4a-4a3a-a0b0-dbc3a21a6038",
+  "choice": "Yes — an append-only observation log keyed by (holding, as-of date, source). The latest row is the current state; the full series is the substrate Net-Worth-Actuals-vs-Plan (a core deliverable) reads to plot actuals over time. Channel/source is stamped on each row for provenance and conflict resolution.",
+  "rationale": "The objective makes 'track actual net worth over time' central, and a single mutable balance field can't reconstruct history — you'd lose every prior point the moment a new sync lands. 9b7cc94d already gives a Holding an as-of date for its LAST observed value; promoting that to a log is the minimal change that unblocks tracking. The spreadsheet (source) only carries one aggregate dollar balance per YEAR, so a daily/per-observation log is a deliberate fidelity delta, not a transcription.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "eafd101c-5d4a-4a3a-a0b0-dbc3a21a6038"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "abf862f1c8da6d77f45d65c86e91ad9dc735e9aa"
+  },
+  "created_at": "2026-06-24T17:46:35.711Z"
+}
