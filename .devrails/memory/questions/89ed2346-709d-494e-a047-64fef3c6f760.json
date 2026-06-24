@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "89ed2346-709d-494e-a047-64fef3c6f760",
+  "question": "What does a Person carry as core attributes, and how are the household's two adults related to each other?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "e61c262ade8a20204f67e91f42440d6df01992d3"
+  },
+  "created_at": "2026-06-24T02:42:08.199Z"
+}

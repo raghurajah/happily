@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "93f1ef1a-6970-44f7-8d28-b22db16e24e6",
+  "question_id": "89ed2346-709d-494e-a047-64fef3c6f760",
+  "choice": "Person carries: display name, date of birth, and a marital/partner link between the two adults. Birth date (not just age) is the single source for current age, the statutory RMD age (73), and SSA claiming age — derive everything else from it. Model the relationship as an explicit spouse/partner link on the household (max two adults for v1) because filing status and SSA survivor benefits depend on it. Do NOT carry sex/gender: end-ages are user-set per person (ae3a6a6a), not drawn from a mortality table, so gender has no engine input in v1.",
+  "rationale": "RMD age and SSA claiming-age adjustments (701e81b4, fe56f1d6) are both functions of a person's age at a calendar step, which is only well-defined from a birth date; storing age alone drifts as the projection advances. The spouse link is the prerequisite for survivor-benefit handling the SSA engine already assumes. Gender would only earn its place if mortality were stochastic, which it isn't in v1.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "89ed2346-709d-494e-a047-64fef3c6f760"
+    },
+    {
+      "type": "cites",
+      "target": "701e81b4-9cbb-40af-ac04-c5ffcc2eee2b"
+    },
+    {
+      "type": "cites",
+      "target": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46"
+    },
+    {
+      "type": "cites",
+      "target": "ae3a6a6a-65ad-4536-9e7f-25e69a9ab860"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "e61c262ade8a20204f67e91f42440d6df01992d3"
+  },
+  "created_at": "2026-06-24T02:42:08.199Z"
+}
