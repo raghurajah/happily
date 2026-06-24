@@ -1,0 +1,44 @@
+{
+  "kind": "decision",
+  "id": "8b19f9b0-9dd9-487a-a99b-37e383334d5f",
+  "question_id": "d1efccef-6a7e-490f-995a-fad13ad66af9",
+  "choice": "Yes — add ONE generic 'One-Time Event' entity in v1: {date/age, signed amount expressed in real or nominal dollars, direction in/out, target Account or tax bucket for an inflow / source for an outflow, a taxable-amount field that feeds the existing bracketed-net tax rule (dc489f83), optional link to a real-estate Holding it liquidates}. Inflows land in the chosen account and then grow/are-sourced by the normal engine; outflows hit the withdrawal order like a spending spike. Do NOT model the triggering event's own mechanics (no capital-gains-on-home-sale calc beyond the net taxable amount you type, no step-up, no RSU vesting schedule) — keep it a dated signed cashflow, consistent with the bracketed-net fidelity cap.",
+  "rationale": "This is a first-order driver competitors (ProjectionLab, BoldIn, Root) all expose, and the two recurring primitives can't represent it cleanly: a one-time home-sale inflow can't be a recurring stream, and a 4-year college spike distorts the 'baseline real spending' semantics if you bake it into the spending path. It also unlocks the only sanctioned way to convert a non-depleting real-estate line (af999d56) or net out a mortgage payoff (d87af9b2) inside the projection. A single signed-cashflow entity adds one engine path, not several, and rides entirely on machinery already decided (withdrawal order fe56f1d6, bracketed-net tax dc489f83, account buckets d424a37f). The alternative — encoding spikes inside the spending schedule and ignoring lumpy inflows — silently overstates depletion risk for any household with a house to sell or an inheritance coming.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d1efccef-6a7e-490f-995a-fad13ad66af9"
+    },
+    {
+      "type": "cites",
+      "target": "701e81b4-9cbb-40af-ac04-c5ffcc2eee2b"
+    },
+    {
+      "type": "cites",
+      "target": "fb2dfbc8-7068-46c8-9668-340a58fec169"
+    },
+    {
+      "type": "cites",
+      "target": "af999d56-8732-4834-9b13-a05c048bdc76"
+    },
+    {
+      "type": "cites",
+      "target": "d87af9b2-9a17-41d7-999d-e2450f9dc6a7"
+    },
+    {
+      "type": "cites",
+      "target": "dc489f83-3c07-4eca-bbec-08fb81c77ca7"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "1b150dc41cf427865a38a922ed37ce1346203c69"
+  },
+  "created_at": "2026-06-24T03:03:19.650Z"
+}

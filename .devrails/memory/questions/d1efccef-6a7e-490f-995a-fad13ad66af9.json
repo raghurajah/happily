@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "d1efccef-6a7e-490f-995a-fad13ad66af9",
+  "question": "Beyond recurring income streams and the recurring real spending schedule, does v1 model discrete, dated, one-time cashflow events — large inflows (inheritance, proceeds from selling the house, a bonus/RSU vest, a one-off gift) and large outflows (a child's college over a few years, a roof/car/wedding, a planned big purchase)? Today the domain has recurring income streams (701e81b4) with start/end dates and a single recurring real spending path (fb2dfbc8), plus real estate that is explicitly *not* drawn down (af999d56) — so 'sell the house at 78 and move the proceeds into taxable' or 'receive a $400k inheritance at 80' has no home in the model.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "1b150dc41cf427865a38a922ed37ce1346203c69"
+  },
+  "created_at": "2026-06-24T03:03:19.650Z"
+}
