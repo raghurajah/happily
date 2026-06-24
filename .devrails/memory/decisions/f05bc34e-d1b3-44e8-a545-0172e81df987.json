@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "f05bc34e-d1b3-44e8-a545-0172e81df987",
+  "question_id": "fb569a69-2146-4e0b-a73d-e8727c48ade3",
+  "choice": "No. There is no separate retirement-date concept. Each person's salary is an income stream with its own end date; that end date IS the boundary. When the stream ends, the withdrawal order covers the resulting shortfall. Mixed-phase households and SSA claiming age are handled by per-stream start/end dates, not a retirement flag.",
+  "rationale": "The human ruled that retirement is implicit in the income stream — salary ending and withdrawals filling the gap fully captures the income-side boundary without a dedicated date field. (human-settled during grooming, within discussion of \"Does each working Person carry an explicit work-income-end (retirement) date that bounds salary, deferrals, and contributions — i.e., the per-person accumulation→decumulation boundary at which earned income stops and the withdrawal engine begins covering that person's share of the shortfall?\")",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "fb569a69-2146-4e0b-a73d-e8727c48ade3"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "645729f6cb7df71a903ac0d2f02d4dcc7549e803"
+  },
+  "created_at": "2026-06-24T02:58:51.908Z"
+}

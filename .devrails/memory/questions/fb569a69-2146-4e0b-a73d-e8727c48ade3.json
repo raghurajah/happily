@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "fb569a69-2146-4e0b-a73d-e8727c48ade3",
+  "question": "Is the accumulation→decumulation boundary an explicit per-person retirement date field?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "645729f6cb7df71a903ac0d2f02d4dcc7549e803"
+  },
+  "created_at": "2026-06-24T02:58:51.908Z"
+}
