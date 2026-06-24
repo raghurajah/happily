@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "40d5d634-fe15-4acf-9132-1a71656b23da",
+  "question": "How are transactional emails (login magic-links and invites) actually delivered — what provider/mechanism, and is deliverability a v1 requirement?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "7918763701f8b5a273377222a70540f7d28e2ff6"
+  },
+  "created_at": "2026-06-24T02:02:01.360Z"
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "49d58688-862c-4bed-bac9-2447605e3c36",
+  "question_id": "40d5d634-fe15-4acf-9132-1a71656b23da",
+  "choice": "Postmark (transactional-focused, strong deliverability)",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Pick one transactional email provider (e.g. Postmark, Amazon SES, or Resend) behind a thin mailer abstraction, with a dedicated sending domain and SPF/DKIM configured as a v1 requirement. Magic-link + invite are the only ways into the system, so deliverability is on the critical path, not a nice-to-have.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "40d5d634-fe15-4acf-9132-1a71656b23da"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "7918763701f8b5a273377222a70540f7d28e2ff6"
+  },
+  "created_at": "2026-06-24T02:02:01.360Z"
+}
