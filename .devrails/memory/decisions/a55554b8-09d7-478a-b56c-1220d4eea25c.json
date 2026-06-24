@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "a55554b8-09d7-478a-b56c-1220d4eea25c",
+  "question_id": "2028953e-feeb-414c-be50-21a01a9fea92",
+  "choice": "Define a survivor transition at each death: (a) ACCOUNTS — joint taxable passes to the survivor as sole owner; the deceased's tax-deferred/Roth roll to the survivor and, at v1 fidelity, are treated as the survivor's own for RMD timing against the SURVIVOR's age (597b1fd5/fe56f1d6); (b) TAXES — filing status flips married→single, so the bracketed model (dc489f83) uses single brackets thereafter; (c) SSA — survivor keeps the LARGER of the two benefits, the smaller stops (the survivor-benefit rule 93d9c012/701e81b4 already assume); (d) SPENDING — apply a configurable survivor spending factor defaulting to ~100% for v1 (data shape allows a haircut later, like fb2dfbc8's phases). No probate, step-up-in-basis, or estate-tax modeling in v1.",
+  "rationale": "597b1fd5 explicitly deferred 'the death-transition question' and 93d9c012/701e81b4 assert survivor benefits 'depend on' the spouse link without pinning the rule — so a last-survivor projection (ae3a6a6a) currently has undefined behavior the moment the first person dies, which is mid-horizon for most households. The four sub-rules are the minimum to keep taxes, RMDs, and SS coherent after a death; each reuses machinery already decided rather than adding new engine paths. A default survivor spending factor of 100% is the conservative choice and keeps v1 from inventing a spending-decline model now.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2028953e-feeb-414c-be50-21a01a9fea92"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "ad48c4e867701afc95b420ce779b7b877afaa6af"
+  },
+  "created_at": "2026-06-24T02:52:08.932Z"
+}

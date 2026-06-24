@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "2028953e-feeb-414c-be50-21a01a9fea92",
+  "question": "At a person's modeled end-age (the household runs to last survivor, ae3a6a6a), what happens to the deceased's accounts, income streams, taxes, and spending?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "ad48c4e867701afc95b420ce779b7b877afaa6af"
+  },
+  "created_at": "2026-06-24T02:52:08.932Z"
+}
