@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "fb4c072c-4c4b-46da-8a75-14c01c7df1b7",
+  "question": "Are deferrals and employer/employee contributions (b5a77b58) keyed off the salary stream's active window — so they automatically cease the year that person's salary stream ends — rather than configured as independent flows that could persist after earned income stops?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "840b539863302c07fb78a73cc67657b01d6a65ce"
+  },
+  "created_at": "2026-06-24T02:59:38.732Z"
+}

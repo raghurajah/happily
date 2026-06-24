@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "0c6a8ebc-8692-4cd7-80a2-7f4d3ce5f6eb",
+  "question_id": "fb4c072c-4c4b-46da-8a75-14c01c7df1b7",
+  "choice": "Yes — bind contributions and deferrals to the salary stream that funds them. While a person's salary stream is active in a given year, deferrals/match accrue; the year the stream ends, they stop automatically, with no separate trigger. Contributions are a function of active earned income, so they should derive from the same stream rather than carry their own lifetime.",
+  "rationale": "Income stopping is already handled by the stream ending (now settled). But contributions/deferrals are derived savings behaviors, not income — if they're configured independently they could keep firing after earned income is gone, which is wrong. Binding them to the funding stream's active window is what makes the income-stream model complete on the outflow/savings side.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "fb4c072c-4c4b-46da-8a75-14c01c7df1b7"
+    },
+    {
+      "type": "cites",
+      "target": "701e81b4-9cbb-40af-ac04-c5ffcc2eee2b"
+    },
+    {
+      "type": "cites",
+      "target": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46"
+    },
+    {
+      "type": "cites",
+      "target": "93f1ef1a-6970-44f7-8d28-b22db16e24e6"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "840b539863302c07fb78a73cc67657b01d6a65ce"
+  },
+  "created_at": "2026-06-24T02:59:38.732Z"
+}
