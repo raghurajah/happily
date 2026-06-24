@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281",
+  "question_id": "5b4bf9ac-a43a-4ede-9fef-b769e0478feb",
+  "choice": "Store marketable securities (af999d56 kind a) as a share QUANTITY against their ticker; value = quantity x latest market price, valued daily for actuals and grown by the drawn price path in the forecast. Store asset-class proxies (kind b) and non-market fixed (kind c) as a DOLLAR BALANCE, grown by the class series / nominal rate respectively. So a Holding carries: identifier (ticker for a, class for b, none for c), kind, and EITHER quantity (a) OR dollar balance (b/c), plus an as-of date for the last observed value. This is what makes the daily-equity-valuation delta and clean E*TRADE/CSV position import possible.",
+  "rationale": "The objective's stated delta from the spreadsheet is tracking equity values daily, which is only well-defined if marketable holdings are shares x price rather than a typed-in dollar figure; the spreadsheet (source) tracks only aggregate dollar balances by year. Beta and the historic series (50c37e3f/62a1f0fb/f7a7d3c1) are already price-series concepts, so a marketable holding naturally keys off a ticker + quantity. Proxies and cash have no share count, so a dollar balance is the only coherent representation for them. Pinning this now unblocks Balance Ingestion and Market Data, which both consume it.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "5b4bf9ac-a43a-4ede-9fef-b769e0478feb"
+    },
+    {
+      "type": "cites",
+      "target": "af999d56-8732-4834-9b13-a05c048bdc76"
+    },
+    {
+      "type": "cites",
+      "target": "f7a7d3c1-99ea-413f-a986-a2a525e76c32"
+    },
+    {
+      "type": "cites",
+      "target": "62a1f0fb-cda2-4e45-8bad-1c2ee12070d8"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "d5217c2d9e00a958f29fbc83e9b576e5a5526dfd"
+  },
+  "created_at": "2026-06-24T02:30:11.644Z"
+}
