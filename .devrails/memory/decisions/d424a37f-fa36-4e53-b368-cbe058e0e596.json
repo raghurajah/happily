@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "d424a37f-fa36-4e53-b368-cbe058e0e596",
+  "question_id": "d877b62a-386c-4712-81ec-b8c9a45a8938",
+  "choice": "Three buckets: taxable, tax-deferred (Traditional 401(k)/IRA), and tax-free (Roth) — exactly the three the withdrawal engine already sources from in fe56f1d6. Carry the enum so HSA/529/etc. can be added later, but keep only these three in v1.",
+  "rationale": "fe56f1d6 fixed the sourcing order as taxable → tax-deferred → Roth and forces RMDs from tax-deferred only, so the domain must distinguish precisely these three treatments. Specialty accounts (HSA, 529, taxable-but-tax-advantaged munis) carry their own rules that are out of v1's tax scope (dc489f83 caps modeling at bracketed net amounts), so they'd add tax-logic without v1 payoff.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "d877b62a-386c-4712-81ec-b8c9a45a8938"
+    },
+    {
+      "type": "cites",
+      "target": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46"
+    },
+    {
+      "type": "cites",
+      "target": "dc489f83-3c07-4eca-bbec-08fb81c77ca7"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "b83f32d9ccb90676031348951df6b5a5016a2ba6"
+  },
+  "created_at": "2026-06-24T02:26:28.081Z"
+}
