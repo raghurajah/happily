@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "7b0325f6-be57-4735-adec-724def33e499",
+  "question_id": "729e1268-746e-4f4b-8f1e-58b5caf40e66",
+  "choice": "On first connect, list the discovered E*TRADE accounts and have the user map each one to an existing Account or create a new one; persist the external-account-id ↔ Account link so every later sync is fully automatic and unattended. Carry the account's tax bucket (d424a37f) from our Account, not from E*TRADE (its account 'type' is advisory only).",
+  "rationale": "Silent auto-create on first sync risks duplicate or mis-typed Accounts (E*TRADE doesn't tell us our taxable/deferred/Roth bucket reliably), and tax bucket drives withdrawal order and RMDs (fe56f1d6) — too consequential to infer. A one-time explicit mapping, then a stored link, keeps the recurring path automatic while keeping the user in control of the tax-treatment assignment that the engine depends on.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "729e1268-746e-4f4b-8f1e-58b5caf40e66"
+    },
+    {
+      "type": "cites",
+      "target": "d410eb00-98e4-48a5-b623-a186bf41362e"
+    },
+    {
+      "type": "cites",
+      "target": "d424a37f-fa36-4e53-b368-cbe058e0e596"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "3b2c13eb77624dc50d5cb13676067792705a43e1"
+  },
+  "created_at": "2026-06-24T18:05:45.541Z"
+}
