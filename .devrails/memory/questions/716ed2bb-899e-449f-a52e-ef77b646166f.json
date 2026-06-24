@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "716ed2bb-899e-449f-a52e-ef77b646166f",
+  "question": "Does the domain model carry liabilities (mortgage, loans, other debt) as first-class entities, and if so how do they participate in the forecast vs. net-worth tracking?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "aa5fa22a30d1fe4362c8e844caacee8bff6e69b9"
+  },
+  "created_at": "2026-06-24T02:45:11.358Z"
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "d87af9b2-9a17-41d7-999d-e2450f9dc6a7",
+  "question_id": "716ed2bb-899e-449f-a52e-ef77b646166f",
+  "choice": "Add a Liability entity {type: mortgage|loan|other, current balance, interest rate, optional amortization schedule / monthly payment, optional link to a real-estate Holding}. In NET WORTH it nets against assets as a negative line (assets − liabilities). In the FORECAST it is held-flat or amortized down per its schedule, but its payment is NOT a separate engine cashflow — it's already part of the real spending schedule (fb2dfbc8), so we avoid double-counting. Liabilities are never 'drawn down' or invested. This keeps v1 honest about net worth (a core deliverable) without inventing a debt-service engine.",
+  "rationale": "The objective makes 'track actual net worth' central, and net worth is meaningless without debts. Real estate is already a non-depleting net-worth line (af999d56) but its mortgage has no home today — a household with a $1M house and an $800k mortgage would show $1M, badly overstating net worth and the bequest distribution (ff44dae1). Modeling the payment inside spending rather than as its own cashflow matches how the spreadsheet (source) treats outflows and avoids a second cashflow path.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "716ed2bb-899e-449f-a52e-ef77b646166f"
+    },
+    {
+      "type": "cites",
+      "target": "af999d56-8732-4834-9b13-a05c048bdc76"
+    },
+    {
+      "type": "cites",
+      "target": "fb2dfbc8-7068-46c8-9668-340a58fec169"
+    },
+    {
+      "type": "cites",
+      "target": "ff44dae1-ce51-48d7-a542-9df093973b15"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "aa5fa22a30d1fe4362c8e844caacee8bff6e69b9"
+  },
+  "created_at": "2026-06-24T02:45:11.358Z"
+}
