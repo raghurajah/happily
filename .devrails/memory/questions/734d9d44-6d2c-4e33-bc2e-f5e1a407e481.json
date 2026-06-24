@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "734d9d44-6d2c-4e33-bc2e-f5e1a407e481",
+  "question": "How is Account ownership modeled — does every Account have an owner Person, and do we support joint accounts?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "c7345ee2cd67b510c9a5e1c8cfa3ad7ca0ae0d70"
+  },
+  "created_at": "2026-06-24T02:42:56.002Z"
+}

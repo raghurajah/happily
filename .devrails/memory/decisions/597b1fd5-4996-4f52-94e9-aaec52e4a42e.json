@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "597b1fd5-4996-4f52-94e9-aaec52e4a42e",
+  "question_id": "734d9d44-6d2c-4e33-bc2e-f5e1a407e481",
+  "choice": "Every Account links to an owner Person and carries an ownership type {individual, joint}. Tax-deferred and Roth accounts (d424a37f) are ALWAYS individually owned — the IRS has no joint retirement accounts — so RMDs (fe56f1d6) compute against that single owner's age. Allow 'joint' only for taxable accounts, owned by both adults; for engine purposes a joint taxable account behaves like an individual one (no per-owner tax rule differs at v1's bracketed-net fidelity, dc489f83), so 'joint' is mainly a display/ownership-transfer affordance.",
+  "rationale": "d410eb00 placed RMD applicability and ownership on the Account container but left the actual ownership cardinality unpinned. RMDs are statutorily per-owner-age, so a tax-deferred Account must resolve to exactly one owner Person; making that a hard constraint prevents an undefined 'whose age?' at RMD time. Joint taxable ownership is the common real household case and matters for the death-transition question below, but adds no tax math at v1 fidelity.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "734d9d44-6d2c-4e33-bc2e-f5e1a407e481"
+    },
+    {
+      "type": "cites",
+      "target": "d410eb00-98e4-48a5-b623-a186bf41362e"
+    },
+    {
+      "type": "cites",
+      "target": "d424a37f-fa36-4e53-b368-cbe058e0e596"
+    },
+    {
+      "type": "cites",
+      "target": "fe56f1d6-3fd3-42e4-86a4-0f2324094d46"
+    },
+    {
+      "type": "cites",
+      "target": "dc489f83-3c07-4eca-bbec-08fb81c77ca7"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "c7345ee2cd67b510c9a5e1c8cfa3ad7ca0ae0d70"
+  },
+  "created_at": "2026-06-24T02:42:56.002Z"
+}
