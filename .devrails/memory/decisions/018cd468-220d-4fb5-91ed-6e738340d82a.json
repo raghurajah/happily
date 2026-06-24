@@ -1,0 +1,36 @@
+{
+  "kind": "decision",
+  "id": "018cd468-220d-4fb5-91ed-6e738340d82a",
+  "question_id": "43848303-18cb-4b98-b7d7-ea98ff313f65",
+  "choice": "Surplus is implicitly consumed (not saved) unless the user enters an explicit taxable-contribution stream",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Invest the surplus into the TAXABLE bucket at the Plan's target allocation each step — symmetric to how deferrals land in tax-deferred (b5a77b58a) — and follow the same buy-and-hold/no-rebalance rule thereafter (returns reinvested in-asset). This makes accumulation automatic from income-vs-spending without a separate savings input, and matches how real households build taxable brokerage balances in their working years.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "43848303-18cb-4b98-b7d7-ea98ff313f65"
+    },
+    {
+      "type": "cites",
+      "target": "b5a77b58-ed2e-4531-89a1-17eda116b2b5"
+    },
+    {
+      "type": "cites",
+      "target": "701e81b4-9cbb-40af-ac04-c5ffcc2eee2b"
+    },
+    {
+      "type": "cites",
+      "target": "fb2dfbc8-7068-46c8-9668-340a58fec169"
+    },
+    {
+      "type": "grounded-in",
+      "target": "4aea8890-060b-40de-9923-6174861f4efe"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "92662479cca97a5fb81a2e277455e906f6cda890"
+  },
+  "created_at": "2026-06-24T03:10:06.023Z"
+}

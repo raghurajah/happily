@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "43848303-18cb-4b98-b7d7-ea98ff313f65",
+  "question": "During accumulation, after we take deferrals off the top (b5a77b58), pay tax, and absorb the real spending schedule (fb2dfbc8), what happens to any leftover income — the surplus when a household earns more than it spends-plus-defers in a given step?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "92662479cca97a5fb81a2e277455e906f6cda890"
+  },
+  "created_at": "2026-06-24T03:10:06.023Z"
+}
