@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "bec547e7-aca1-495b-a476-5e91d707391b",
+  "question": "Does an Account-style entity sit between Person and Holding, owning many Holdings, with each Holding in exactly one?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "6b8a4f2f02f8a138ec784f52ece69e2444789402"
+  },
+  "created_at": "2026-06-24T02:14:54.450Z"
+}
