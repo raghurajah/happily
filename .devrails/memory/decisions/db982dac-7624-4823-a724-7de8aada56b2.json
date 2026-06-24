@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "db982dac-7624-4823-a724-7de8aada56b2",
+  "question_id": "9a372e91-92b2-4e42-89cc-35e72bb33e87",
+  "choice": "No. There is no background scheduler; sync cannot run unattended across days.",
+  "rationale": "E*TRADE's user-OAuth access token expires at midnight US-Eastern and there is no refresh token or renewable read-only credential — only a fresh user-driven re-authorization can mint a new token, so no server can pull unattended. (Correction to the human's framing: the blocker is the daily token-expiry model, not the absence of a consumer/API key, which is required just to make any call.) (human-settled during grooming, within discussion of \"What actually triggers an E*TRADE sync, and how often does it run? E*TRADE's OAuth access tokens expire at midnight US-Eastern and require a fresh user-driven re-authorization after that — so a token can't sit on a server and pull unattended day after day. Given that, decision 7b0325f6's promise that 'every later sync is fully automatic and unattended' isn't literally achievable across days. How do we reconcile this?\")",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "9a372e91-92b2-4e42-89cc-35e72bb33e87"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "e84eb3e8d7bf27018b6991fac9866163ed22302a"
+  },
+  "created_at": "2026-06-24T21:06:20.981Z"
+}
