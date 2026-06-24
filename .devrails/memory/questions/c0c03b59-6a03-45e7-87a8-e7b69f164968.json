@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "c0c03b59-6a03-45e7-87a8-e7b69f164968",
+  "question": "How does an incoming observation (E*TRADE sync row or CSV line) bind to our domain entities, and what happens on a miss? Specifically: (a) E*TRADE brokerage accounts map to our Account entities via a stored external-account-id the user confirms on first sync; (b) an unrecognized ticker creates a marketable-Holding stub under the mapped Account, flagged for user review rather than silently dropped; (c) a holding present in our model but ABSENT from a full sync is treated as a closed/zero position (with confirmation), not left stale.",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "0c17c7774eea1da58a071cc5744e3eacc918ed5b"
+  },
+  "created_at": "2026-06-24T17:50:20.594Z"
+}

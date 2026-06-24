@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "3a60489b-fce9-4352-84ae-197145c6e542",
+  "question_id": "c0c03b59-6a03-45e7-87a8-e7b69f164968",
+  "choice": "Adopt (a)+(b)+(c). Persist an explicit external-account-id ↔ Account mapping (confirmed once, reused thereafter); auto-create flagged Holding stubs for unknown tickers so nothing is dropped; and on a full position sync, treat omitted holdings as zeroed-out but surface them for confirmation before depleting net worth. Manual entry and CSV reuse the same stub/flag path for unknown tickers.",
+  "rationale": "Read-only sync and CSV both feed actuals that drive the Plan comparison, so a silent drop or a stale non-zero balance directly corrupts a core deliverable. An explicit account mapping avoids guessing which of several Accounts a brokerage account is; flagged stubs preserve data without auto-trusting it; and handling disappearance prevents a sold-out position from inflating net worth forever. This is the auth/error-edge of ingestion — down/partial/unknown inputs — that the area can't be groomed past without settling.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "c0c03b59-6a03-45e7-87a8-e7b69f164968"
+    },
+    {
+      "type": "cites",
+      "target": "d410eb00-98e4-48a5-b623-a186bf41362e"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "0c17c7774eea1da58a071cc5744e3eacc918ed5b"
+  },
+  "created_at": "2026-06-24T17:50:20.594Z"
+}
