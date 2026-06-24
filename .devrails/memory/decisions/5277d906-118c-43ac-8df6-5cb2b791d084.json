@@ -1,0 +1,24 @@
+{
+  "kind": "decision",
+  "id": "5277d906-118c-43ac-8df6-5cb2b791d084",
+  "question_id": "58435460-925a-422d-ad41-67dbbe3b6745",
+  "choice": "Track cost basis per holding now",
+  "rationale": "Human-chosen during grooming (overrode recommendation: No cost basis or lot tracking in v1. Carry only current position (quantity or balance) and value. Leave a nullable cost-basis field on the schema so it can be populated later, but the engine ignores it.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "58435460-925a-422d-ad41-67dbbe3b6745"
+    },
+    {
+      "type": "cites",
+      "target": "dc489f83-3c07-4eca-bbec-08fb81c77ca7"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "5c665f8cfd739f7bbdbb7d18d3239279a6ce31d5"
+  },
+  "created_at": "2026-06-24T02:33:23.346Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "58435460-925a-422d-ad41-67dbbe3b6745",
+  "question": "Do Holdings track cost basis (and lots) in v1, or only current value?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "5c665f8cfd739f7bbdbb7d18d3239279a6ce31d5"
+  },
+  "created_at": "2026-06-24T02:33:23.346Z"
+}
