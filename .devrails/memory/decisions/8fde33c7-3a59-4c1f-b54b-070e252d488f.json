@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "8fde33c7-3a59-4c1f-b54b-070e252d488f",
+  "question_id": "ca97abbb-cb06-416a-b0e8-2895a05cd0c4",
+  "choice": "On a successful, complete (non-partial) sync of a mapped account, treat the returned position set as the authoritative snapshot for that account: a previously-held marketable Holding now absent is set to zero quantity as-of the sync date (position closed/sold), not left stale. This applies ONLY to marketable Holdings inside that mapped account, only on a fully-successful account return, and is recorded as a new zero observation (history preserved), never a delete. This is distinct from b45b7691, which forbids zeroing on failure/partial — here the account succeeded and genuinely returned no such position.",
+  "rationale": "777f97e5 makes sync authoritative; if a sold position stayed at its last synced quantity forever, net-worth actuals would silently overstate the portfolio — the exact failure mode b45b7691 guards against in the other direction. Scoping zero-on-absence to successful, complete account returns keeps b45b7691's fail-closed guarantee intact (a timeout/partial still touches nothing) while letting the authoritative snapshot reflect reality. Recording a zero observation rather than deleting preserves the actuals timeline the tracking area depends on.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "ca97abbb-cb06-416a-b0e8-2895a05cd0c4"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    },
+    {
+      "type": "cites",
+      "target": "e55c1049-6819-41be-8965-ed859a4e2919"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "6e6a9532843055c92173b8a02a86ba90878365ab"
+  },
+  "created_at": "2026-06-25T07:04:12.119Z"
+}
