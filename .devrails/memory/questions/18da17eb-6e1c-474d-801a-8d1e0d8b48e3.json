@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "18da17eb-6e1c-474d-801a-8d1e0d8b48e3",
+  "question": "Is the as-of date per-file or per-row, and does the import commit directly or through a preview?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "a52dc06f04eb8e80ce83fc7053b6cdca56ac58af"
+  },
+  "created_at": "2026-06-25T06:44:42.269Z"
+}

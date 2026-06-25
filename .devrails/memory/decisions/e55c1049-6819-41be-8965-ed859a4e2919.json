@@ -1,0 +1,28 @@
+{
+  "kind": "decision",
+  "id": "e55c1049-6819-41be-8965-ed859a4e2919",
+  "question_id": "18da17eb-6e1c-474d-801a-8d1e0d8b48e3",
+  "choice": "One as-of date per file (defaults to today, editable at import time), and the import always runs through a pre-commit PREVIEW that shows matched / new / absent-flagged / errored rows before anything is written.",
+  "rationale": "A single per-file date matches how a brokerage statement is dated and keeps the as-of stamp (9b7cc94d) coherent; per-row dating is input burden with no v1 payoff. A mandatory preview is the cheap safety net that makes the snapshot-with-flag reconciliation (csv-reconciliation) and unknown-ticker handling (csv-matching-unknowns) auditable before they touch authoritative actuals.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "18da17eb-6e1c-474d-801a-8d1e0d8b48e3"
+    },
+    {
+      "type": "cites",
+      "target": "9b7cc94d-84d2-4667-96a4-d6b27a9f4281"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "a52dc06f04eb8e80ce83fc7053b6cdca56ac58af"
+  },
+  "created_at": "2026-06-25T06:44:42.269Z"
+}
