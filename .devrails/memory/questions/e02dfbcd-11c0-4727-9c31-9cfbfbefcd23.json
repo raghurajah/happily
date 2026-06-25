@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "e02dfbcd-11c0-4727-9c31-9cfbfbefcd23",
+  "question": "Within a linked account, how are the individual E*TRADE positions matched to Holdings, and what happens to positions/holdings that don't line up?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "afabd97a991c7d2563fd3c0d66186867f3a87eee"
+  },
+  "created_at": "2026-06-25T07:01:15.613Z"
+}
