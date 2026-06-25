@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "3a24c396-1eba-4fce-920d-bf63fa054962",
+  "question_id": "2e78d037-bbed-4883-a50f-cf962c6a1b0a",
+  "choice": "Store an external-account identifier on the Account: for E*TRADE, persist its accountIdKey from the first authorized sync and bind it permanently to one Account (a first-sync mapping step lets the user pick 'this E*TRADE account → this Happily Account, or create new'). For CSV, the import maps each file (or a file's account column) to a target Account via a one-time user-confirmed mapping that's remembered for next time. Manual entry has no external key — it's authored directly against an Account.",
+  "rationale": "Precedence (777f97e5) and atomic-per-account sync (b45b7691) both assume sync results can be attributed to a specific Account; without a stored external key, a re-sync can't tell whether it's updating the same account or creating a duplicate. A remembered mapping keeps repeat CSV imports and daily re-auth'd syncs idempotent rather than re-prompting every time.",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "2e78d037-bbed-4883-a50f-cf962c6a1b0a"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    },
+    {
+      "type": "cites",
+      "target": "777f97e5-d02d-4716-9dde-b005fe8f0ec1"
+    },
+    {
+      "type": "cites",
+      "target": "d410eb00-98e4-48a5-b623-a186bf41362e"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "a6a849abd74cedf8229179611a4d0058fc41c12e"
+  },
+  "created_at": "2026-06-25T06:12:25.354Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "2e78d037-bbed-4883-a50f-cf962c6a1b0a",
+  "question": "How is a real-world source account bound to an Account entity so inbound data lands in the right place — i.e. what's the join key for E*TRADE and for CSV?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "a6a849abd74cedf8229179611a4d0058fc41c12e"
+  },
+  "created_at": "2026-06-25T06:12:25.354Z"
+}
