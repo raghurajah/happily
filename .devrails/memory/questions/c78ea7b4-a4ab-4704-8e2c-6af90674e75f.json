@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "c78ea7b4-a4ab-4704-8e2c-6af90674e75f",
+  "question": "What is the connect/reconnect handshake shape, given E*TRADE OAuth 1.0a + the daily token expiry (db982dac)? Specifically: one app-level consumer key for the whole instance, and a per-user out-of-band verifier (PIN) step on every reconnect?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "673cb43479d10cf3ba90a9df100151e756aaa7dc"
+  },
+  "created_at": "2026-06-25T07:58:26.524Z"
+}

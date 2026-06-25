@@ -1,0 +1,32 @@
+{
+  "kind": "decision",
+  "id": "0c672ec1-b1bf-48af-bc4c-7721c8977d4c",
+  "question_id": "c78ea7b4-a4ab-4704-8e2c-6af90674e75f",
+  "choice": "Store the E*TRADE connection/code per household — it is not universal across households, so scope the credentials to the household rather than as instance-wide app config.",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Use a single app-level E*TRADE consumer key/secret (registered once by the instance owner, stored as app config outside any household partition), and a standard 3-legged OAuth 1.0a per-user handshake: app gets a request token → user is sent to E*TRADE → user pastes back the verifier code → app exchanges for the daily access token (encrypted per e540d090). Because tokens die at midnight ET with no refresh (db982dac), 'Reconnect E*TRADE' (b45b7691) re-runs exactly this verifier flow; there is no silent renewal. Treat the verifier paste-back as expected friction, surfaced as a clear daily reconnect prompt, not an error.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "c78ea7b4-a4ab-4704-8e2c-6af90674e75f"
+    },
+    {
+      "type": "cites",
+      "target": "db982dac-7624-4823-a724-7de8aada56b2"
+    },
+    {
+      "type": "cites",
+      "target": "e540d090-44c0-438f-a404-18104d2a2678"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "673cb43479d10cf3ba90a9df100151e756aaa7dc"
+  },
+  "created_at": "2026-06-25T07:58:26.524Z"
+}
