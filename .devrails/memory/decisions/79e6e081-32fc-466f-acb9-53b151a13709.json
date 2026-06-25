@@ -1,0 +1,37 @@
+{
+  "kind": "decision",
+  "id": "79e6e081-32fc-466f-acb9-53b151a13709",
+  "question_id": "e831f47d-0eb9-4372-9946-bcf5bddc3150",
+  "choice": "Redefine 'unattended' = no re-mapping (recommended), with foreground on-demand sync + reconnect prompt",
+  "rationale": "Human-chosen during grooming (overrode recommendation: (1) Redefine 'unattended' in 7b0325f6 to mean 'no re-mapping of accounts is ever needed again' — the persisted account-link is what's automatic — explicitly NOT 'no re-auth'; the once-per-day OAuth handshake is unavoidable and is the price of E*TRADE's token model. (2) Sync is foreground and on-demand: it fires on app-open / visiting the tracking view and via an explicit 'Sync now' button, using whatever valid token exists that day; if the token is missing/expired (the normal state on a new day) we show the b45b7691 'Reconnect E*TRADE' prompt, and after the handshake the sync runs immediately against the persisted account-mapping. E*TRADE actuals thus refresh only on days the user opens the app and reconnects; manual/CSV remain the off-day fallback.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "e831f47d-0eb9-4372-9946-bcf5bddc3150"
+    },
+    {
+      "type": "cites",
+      "target": "7b0325f6-be57-4735-adec-724def33e499"
+    },
+    {
+      "type": "cites",
+      "target": "e540d090-44c0-438f-a404-18104d2a2678"
+    },
+    {
+      "type": "cites",
+      "target": "b45b7691-3551-4c77-aa6d-86d9520121ce"
+    },
+    {
+      "type": "supersedes",
+      "target": "7b0325f6-be57-4735-adec-724def33e499",
+      "reason": "requirements-changed"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "75108a788218b09f133a751cffbc779cdb4d0a17"
+  },
+  "created_at": "2026-06-25T01:10:45.065Z"
+}

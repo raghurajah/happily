@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "e831f47d-0eb9-4372-9946-bcf5bddc3150",
+  "question": "Given that background sync is off the table, two things remain open. (1) How do we re-word 7b0325f6's promise of 'fully automatic and unattended' so it stops contradicting e540d090's daily token drop? (2) What is the concrete trigger model for sync now that it can't be scheduled?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "75108a788218b09f133a751cffbc779cdb4d0a17"
+  },
+  "created_at": "2026-06-25T01:10:45.065Z"
+}
