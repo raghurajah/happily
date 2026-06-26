@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "1ee7ddde-a93f-4656-98bd-6b822e5ac83e",
+  "question_id": "884f3c27-6132-4641-b90e-71711181ef88",
+  "choice": "Unbounded scenarios, at most one active Plan, zero allowed",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Allow an arbitrary number of named scenarios per household (no hard cap in v1), with AT MOST one designated the active Plan at a time. A household can exist with zero scenarios marked (forecasts still run, but actuals-vs-Plan tracking has no baseline until one is marked Plan); marking a different scenario as Plan is an explicit, auditable action. The active-Plan flag lives on the household, mirroring the active-household pattern (e0aff0bb).)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "884f3c27-6132-4641-b90e-71711181ef88"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "37316707c99b880c82ded31e0939b33e97eff91d"
+  },
+  "created_at": "2026-06-26T14:03:58.502Z"
+}
