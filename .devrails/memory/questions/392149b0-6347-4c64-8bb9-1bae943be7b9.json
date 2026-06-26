@@ -1,0 +1,12 @@
+{
+  "kind": "question",
+  "id": "392149b0-6347-4c64-8bb9-1bae943be7b9",
+  "question": "What does a Scenario actually own? Is it a thin layer of named ASSUMPTION OVERRIDES on top of the one shared household domain model — or a full independent COPY of all inputs (people, accounts, holdings, streams, contributions)?",
+  "status": "answered",
+  "edges": [],
+  "git": {
+    "branch": "main",
+    "base_sha": "a64d9fb246add1b43f44af0bc822a62f9f456527"
+  },
+  "created_at": "2026-06-26T14:03:29.692Z"
+}

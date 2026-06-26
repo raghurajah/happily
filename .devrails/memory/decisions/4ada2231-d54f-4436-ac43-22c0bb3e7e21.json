@@ -1,0 +1,20 @@
+{
+  "kind": "decision",
+  "id": "4ada2231-d54f-4436-ac43-22c0bb3e7e21",
+  "question_id": "392149b0-6347-4c64-8bb9-1bae943be7b9",
+  "choice": "Base + named overrides (deltas) on shared domain model",
+  "rationale": "Human-chosen during grooming (overrode recommendation: Make a Scenario = the shared household domain model + a named set of forecast-assumption OVERRIDES (deltas). The scenario references the same People/Accounts/Holdings and their actual balances; it carries only the knobs that change a projection: per-person end-ages (ae3a6a6a) and income-stream start/end dates (f05bc34e, e.g. 'retire 2 years earlier'), the real spending schedule (fb2dfbc8), target allocation, withdrawal order (fe56f1d6), fee drag (d84bc8b5), SSA claiming ages, inflation override (fe17d0a2), and the set of One-Time Events (8b19f9b0). Everything not overridden inherits the household baseline.)",
+  "provenance": "human-confirmed",
+  "trust": "confirmed",
+  "edges": [
+    {
+      "type": "resolved-by",
+      "target": "392149b0-6347-4c64-8bb9-1bae943be7b9"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "base_sha": "a64d9fb246add1b43f44af0bc822a62f9f456527"
+  },
+  "created_at": "2026-06-26T14:03:29.692Z"
+}
